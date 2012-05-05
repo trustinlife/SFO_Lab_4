@@ -365,9 +365,9 @@ VECTOR("E:/1Soft/Quartus/lab_3/db/Lab_3.sim.cvwf")
 VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
+		ZBEGIN = 166285;
 		ZEND = 1000000;
-		NUMERATOR = 1718;
+		NUMERATOR = 1744;
 		DENOMINATOR = 1000000;
 		TOP_INDEX = 0;
 	}
@@ -380,7 +380,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "RAM_addr";
+		SIGNAL = "Addr";
 		INDEX = 0;
 		FORMAT = T;
 		SCALE = 1;
@@ -388,7 +388,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[3]";
+		SIGNAL = "Addr[3]";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -396,7 +396,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[2]";
+		SIGNAL = "Addr[2]";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -404,7 +404,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[1]";
+		SIGNAL = "Addr[1]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -412,7 +412,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[0]";
+		SIGNAL = "Addr[0]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -420,48 +420,8 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ROM_addr";
-		INDEX = 5;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[3]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[2]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[1]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[0]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "clock";
-		INDEX = 10;
+		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -469,7 +429,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "ROM/RAM";
-		INDEX = 11;
+		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -477,7 +437,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut";
-		INDEX = 12;
+		INDEX = 7;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -485,7 +445,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[7]";
-		INDEX = 13;
+		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -493,7 +453,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[6]";
-		INDEX = 14;
+		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -501,7 +461,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[5]";
-		INDEX = 15;
+		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -509,7 +469,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[4]";
-		INDEX = 16;
+		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -517,7 +477,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[3]";
-		INDEX = 17;
+		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -525,7 +485,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[2]";
-		INDEX = 18;
+		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -533,7 +493,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[1]";
-		INDEX = 19;
+		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -541,7 +501,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[0]";
-		INDEX = 20;
+		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -549,7 +509,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "we/re";
-		INDEX = 21;
+		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -557,7 +517,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "Reg_WE/RE";
-		INDEX = 22;
+		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -565,23 +525,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/Lab_3.vwf")
 	}
 	LINE{
 		SIGNAL = "Reg_clk";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RAM_reg_clk";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_reg_clk";
-		INDEX = 25;
+		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -593,9 +537,9 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 999936;
-		NUMERATOR = 1513;
-		DENOMINATOR = 999936;
+		ZEND = 500000;
+		NUMERATOR = 1237;
+		DENOMINATOR = 500000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -607,7 +551,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "RAM_addr";
+		SIGNAL = "Addr";
 		INDEX = 0;
 		FORMAT = T;
 		SCALE = 1;
@@ -615,7 +559,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[3]";
+		SIGNAL = "Addr[3]";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -623,7 +567,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[2]";
+		SIGNAL = "Addr[2]";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -631,7 +575,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[1]";
+		SIGNAL = "Addr[1]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -639,7 +583,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[0]";
+		SIGNAL = "Addr[0]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -647,48 +591,8 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ROM_addr";
-		INDEX = 5;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[3]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[2]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[1]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[0]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "clock";
-		INDEX = 10;
+		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -696,7 +600,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "ROM/RAM";
-		INDEX = 11;
+		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -704,7 +608,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut";
-		INDEX = 12;
+		INDEX = 7;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -712,7 +616,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[7]";
-		INDEX = 13;
+		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -720,7 +624,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[6]";
-		INDEX = 14;
+		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -728,7 +632,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[5]";
-		INDEX = 15;
+		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -736,7 +640,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[4]";
-		INDEX = 16;
+		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -744,7 +648,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[3]";
-		INDEX = 17;
+		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -752,7 +656,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[2]";
-		INDEX = 18;
+		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -760,7 +664,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[1]";
-		INDEX = 19;
+		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -768,7 +672,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "DataOut[0]";
-		INDEX = 20;
+		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -776,7 +680,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "we/re";
-		INDEX = 21;
+		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -784,7 +688,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Reg_WE/RE";
-		INDEX = 22;
+		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -792,23 +696,7 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 	LINE{
 		SIGNAL = "Reg_clk";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RAM_reg_clk";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_reg_clk";
-		INDEX = 25;
+		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -816,13 +704,13 @@ VECTOR("W:/!_SIFO LABS/LAB_3/db/Lab_3.sim.cvwf")
 	}
 }
 
-VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/db/Lab_3.sim.cvwf")
+VECTOR("C:/Users/iw4sp/Documents/My Dropbox/Коля+Юра+Мистер_Штрих_гурио/CИФО/lab_3/Lab_3.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 1000000;
-		NUMERATOR = 1159;
-		DENOMINATOR = 1000000;
+		ZEND = 159000;
+		NUMERATOR = 795;
+		DENOMINATOR = 159000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -834,7 +722,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/db/L
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "RAM_addr";
+		SIGNAL = "Addr";
 		INDEX = 0;
 		FORMAT = T;
 		SCALE = 1;
@@ -842,7 +730,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/db/L
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[3]";
+		SIGNAL = "Addr[3]";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -850,7 +738,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/db/L
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[2]";
+		SIGNAL = "Addr[2]";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -858,7 +746,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/db/L
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[1]";
+		SIGNAL = "Addr[1]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -866,7 +754,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/db/L
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "RAM_addr[0]";
+		SIGNAL = "Addr[0]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -874,48 +762,8 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/db/L
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ROM_addr";
-		INDEX = 5;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[3]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[2]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[1]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[0]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "clock";
-		INDEX = 10;
+		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -923,313 +771,6 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/db/L
 	}
 	LINE{
 		SIGNAL = "ROM/RAM";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut";
-		INDEX = 12;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut[7]";
-		INDEX = 13;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut[6]";
-		INDEX = 14;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut[5]";
-		INDEX = 15;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut[4]";
-		INDEX = 16;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut[3]";
-		INDEX = 17;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut[2]";
-		INDEX = 18;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut[1]";
-		INDEX = 19;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "DataOut[0]";
-		INDEX = 20;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "we/re";
-		INDEX = 21;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Reg_WE/RE";
-		INDEX = 22;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Reg_clk";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Reg/Mem";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_in_data";
-		INDEX = 25;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_in_data[2]";
-		INDEX = 26;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_in_data[1]";
-		INDEX = 27;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_in_data[0]";
-		INDEX = 28;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "iterations";
-		INDEX = 29;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "iterations[2]";
-		INDEX = 30;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "iterations[1]";
-		INDEX = 31;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "iterations[0]";
-		INDEX = 32;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "inc_clk";
-		INDEX = 33;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_clk";
-		INDEX = 34;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_sload";
-		INDEX = 35;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT";
-		INDEX = 36;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT[3]";
-		INDEX = 37;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT[2]";
-		INDEX = 38;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT[1]";
-		INDEX = 39;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT[0]";
-		INDEX = 40;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-}
-
-VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_3.vwf")
-{
-	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 1000000;
-		NUMERATOR = 1164;
-		DENOMINATOR = 1000000;
-		TOP_INDEX = 0;
-	}
-	CLOCK{
-		PERIOD = 200000;
-		OFFSET = 0;
-		DUTY_CYCLE = 50;
-	}
-	RANDOM_VALUE{
-		INTERVAL_TYPE = HALF_GRID;
-	}
-	LINE{
-		SIGNAL = "RAM_addr";
-		INDEX = 0;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RAM_addr[3]";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RAM_addr[2]";
-		INDEX = 2;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RAM_addr[1]";
-		INDEX = 3;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RAM_addr[0]";
-		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr";
-		INDEX = 5;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[3]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -1237,48 +778,8 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ROM_addr[2]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[1]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_addr[0]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "clock";
-		INDEX = 10;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM/RAM";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "DataOut";
-		INDEX = 12;
+		INDEX = 7;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1286,7 +787,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "DataOut[7]";
-		INDEX = 13;
+		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1294,7 +795,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "DataOut[6]";
-		INDEX = 14;
+		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1302,7 +803,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "DataOut[5]";
-		INDEX = 15;
+		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1310,7 +811,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "DataOut[4]";
-		INDEX = 16;
+		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1318,7 +819,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "DataOut[3]";
-		INDEX = 17;
+		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1326,7 +827,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "DataOut[2]";
-		INDEX = 18;
+		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1334,7 +835,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "DataOut[1]";
-		INDEX = 19;
+		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1342,7 +843,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "DataOut[0]";
-		INDEX = 20;
+		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1350,7 +851,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "we/re";
-		INDEX = 21;
+		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1358,7 +859,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "Reg_WE/RE";
-		INDEX = 22;
+		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -1366,159 +867,7 @@ VECTOR("E:/DropBox/Dropbox/Study/Коля+Юра+Мистер_Штрих_гурио (1)/CИФО/lab_3/Lab_
 	}
 	LINE{
 		SIGNAL = "Reg_clk";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "RAM_reg_clk";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ROM_reg_clk";
-		INDEX = 25;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Reg/Mem";
-		INDEX = 26;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_in_data";
-		INDEX = 27;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_in_data[2]";
-		INDEX = 28;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_in_data[1]";
-		INDEX = 29;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_in_data[0]";
-		INDEX = 30;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "iterations";
-		INDEX = 31;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "iterations[2]";
-		INDEX = 32;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "iterations[1]";
-		INDEX = 33;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "iterations[0]";
-		INDEX = 34;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "inc_clk";
-		INDEX = 35;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_clk";
-		INDEX = 36;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "dec_sload";
-		INDEX = 37;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT";
-		INDEX = 38;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT[3]";
-		INDEX = 39;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT[2]";
-		INDEX = 40;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT[1]";
-		INDEX = 41;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ADDR_OUT[0]";
-		INDEX = 42;
+		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
