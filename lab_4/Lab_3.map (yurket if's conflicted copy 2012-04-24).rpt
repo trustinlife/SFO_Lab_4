@@ -1,0 +1,347 @@
+Analysis & Synthesis report for Lab_3
+Mon Apr 16 20:17:20 2012
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Source assignments for LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block|altsyncram_g891:auto_generated
+  5. Source assignments for LPM_ROM:inst2|altrom:srom|altsyncram:rom_block|altsyncram_6mv:auto_generated
+  6. Parameter Settings for User Entity Instance: LPM_RAM_IO:inst1
+  7. Parameter Settings for User Entity Instance: lpm_ff3:inst8|lpm_ff:lpm_ff_component
+  8. Parameter Settings for User Entity Instance: lpm_ff3:inst7|lpm_ff:lpm_ff_component
+  9. Parameter Settings for User Entity Instance: lpm_ff2:inst6|lpm_ff:lpm_ff_component
+ 10. Parameter Settings for User Entity Instance: LPM_ROM:inst2
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                            ;
++-------------------------------+-----------------------------------------+
+; Analysis & Synthesis Status   ; Failed - Mon Apr 16 20:17:20 2012       ;
+; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
+; Revision Name                 ; Lab_3                                   ;
+; Top-level Entity Name         ; Lab_3                                   ;
+; Family                        ; Stratix II                              ;
+; Logic utilization             ; N/A until Partition Merge               ;
+;     Combinational ALUTs       ; N/A until Partition Merge               ;
+;     Dedicated logic registers ; N/A until Partition Merge               ;
+; Total registers               ; N/A until Partition Merge               ;
+; Total pins                    ; N/A until Partition Merge               ;
+; Total virtual pins            ; N/A until Partition Merge               ;
+; Total block memory bits       ; N/A until Partition Merge               ;
+; DSP block 9-bit elements      ; N/A until Partition Merge               ;
+; Total PLLs                    ; N/A until Partition Merge               ;
+; Total DLLs                    ; N/A until Partition Merge               ;
++-------------------------------+-----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2S15F484C3       ;                    ;
+; Top-level entity name                                                      ; Lab_3              ; Lab_3              ;
+; Family name                                                                ; Stratix II         ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Source assignments for LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block|altsyncram_g891:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                        ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
++---------------------------------+--------------------+------+-------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Source assignments for LPM_ROM:inst2|altrom:srom|altsyncram:rom_block|altsyncram_6mv:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------+
+; Assignment                      ; Value              ; From ; To                                    ;
++---------------------------------+--------------------+------+---------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                     ;
++---------------------------------+--------------------+------+---------------------------------------+
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_RAM_IO:inst1 ;
++------------------------+------------+-------------------------+
+; Parameter Name         ; Value      ; Type                    ;
++------------------------+------------+-------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                 ;
+; LPM_WIDTHAD            ; 4          ; Untyped                 ;
+; LPM_NUMWORDS           ; 16         ; Untyped                 ;
+; LPM_INDATA             ; REGISTERED ; Untyped                 ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED ; Untyped                 ;
+; LPM_OUTDATA            ; REGISTERED ; Untyped                 ;
+; LPM_FILE               ; RAM.hex    ; Untyped                 ;
+; USE_EAB                ; ON         ; Untyped                 ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE          ;
++------------------------+------------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff3:inst8|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------+
+; Parameter Name         ; Value      ; Type                                         ;
++------------------------+------------+----------------------------------------------+
+; LPM_WIDTH              ; 4          ; Untyped                                      ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                      ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                      ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                      ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                      ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                      ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                 ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                               ;
++------------------------+------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff3:inst7|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------+
+; Parameter Name         ; Value      ; Type                                         ;
++------------------------+------------+----------------------------------------------+
+; LPM_WIDTH              ; 4          ; Untyped                                      ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                      ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                      ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                      ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                      ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                      ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                 ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                               ;
++------------------------+------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff2:inst6|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------+
+; Parameter Name         ; Value      ; Type                                         ;
++------------------------+------------+----------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                      ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                      ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                      ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                      ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                      ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                      ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                 ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                               ;
++------------------------+------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_ROM:inst2 ;
++------------------------+------------+----------------------+
+; Parameter Name         ; Value      ; Type                 ;
++------------------------+------------+----------------------+
+; LPM_WIDTH              ; 8          ; Untyped              ;
+; LPM_WIDTHAD            ; 4          ; Untyped              ;
+; LPM_NUMWORDS           ; 16         ; Untyped              ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED ; Untyped              ;
+; LPM_OUTDATA            ; REGISTERED ; Untyped              ;
+; LPM_FILE               ; ROM.hex    ; Untyped              ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped              ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE       ;
++------------------------+------------+----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Mon Apr 16 20:17:11 2012
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_3 -c Lab_3
+Info: Found 1 design units, including 1 entities, in source file lab_3.bdf
+    Info: Found entity 1: Lab_3
+Info: Elaborating entity "Lab_3" for the top level hierarchy
+Warning: Can't find a definition for parameter LPM_FILE -- assuming RAM.hex was intended to be a quoted string
+Info: Elaborating entity "LPM_RAM_IO" for hierarchy "LPM_RAM_IO:inst1"
+Info: Elaborated megafunction instantiation "LPM_RAM_IO:inst1"
+Info: Instantiated megafunction "LPM_RAM_IO:inst1" with the following parameter:
+    Info: Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info: Parameter "LPM_FILE" = "RAM.hex"
+    Info: Parameter "LPM_INDATA" = "REGISTERED"
+    Info: Parameter "LPM_NUMWORDS" = "16"
+    Info: Parameter "LPM_OUTDATA" = "REGISTERED"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_WIDTHAD" = "4"
+Info: Elaborating entity "altram" for hierarchy "LPM_RAM_IO:inst1|altram:sram"
+Warning: Assertion warning: altram does not support Stratix II device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Stratix II devices
+Info: Elaborated megafunction instantiation "LPM_RAM_IO:inst1|altram:sram", which is child of megafunction instantiation "LPM_RAM_IO:inst1"
+Info: Elaborating entity "altsyncram" for hierarchy "LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block"
+Info: Elaborated megafunction instantiation "LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "LPM_RAM_IO:inst1"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_g891.tdf
+    Info: Found entity 1: altsyncram_g891
+Info: Elaborating entity "altsyncram_g891" for hierarchy "LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block|altsyncram_g891:auto_generated"
+Warning: Using design file lpm_ff3.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_ff3
+Info: Elaborating entity "lpm_ff3" for hierarchy "lpm_ff3:inst8"
+Info: Elaborating entity "lpm_ff" for hierarchy "lpm_ff3:inst8|lpm_ff:lpm_ff_component"
+Info: Elaborated megafunction instantiation "lpm_ff3:inst8|lpm_ff:lpm_ff_component"
+Info: Instantiated megafunction "lpm_ff3:inst8|lpm_ff:lpm_ff_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_FF"
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_FFTYPE" = "DFF"
+Warning: Using design file lpm_ff2.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_ff2
+Info: Elaborating entity "lpm_ff2" for hierarchy "lpm_ff2:inst6"
+Info: Elaborating entity "lpm_ff" for hierarchy "lpm_ff2:inst6|lpm_ff:lpm_ff_component"
+Info: Elaborated megafunction instantiation "lpm_ff2:inst6|lpm_ff:lpm_ff_component"
+Info: Instantiated megafunction "lpm_ff2:inst6|lpm_ff:lpm_ff_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_FF"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_FFTYPE" = "DFF"
+Info: Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:inst2"
+Info: Elaborated megafunction instantiation "LPM_ROM:inst2"
+Info: Instantiated megafunction "LPM_ROM:inst2" with the following parameter:
+    Info: Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info: Parameter "LPM_FILE" = "ROM.hex"
+    Info: Parameter "LPM_NUMWORDS" = "16"
+    Info: Parameter "LPM_OUTDATA" = "REGISTERED"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_WIDTHAD" = "4"
+Info: Elaborating entity "altrom" for hierarchy "LPM_ROM:inst2|altrom:srom"
+Info: Elaborated megafunction instantiation "LPM_ROM:inst2|altrom:srom", which is child of megafunction instantiation "LPM_ROM:inst2"
+Info: Elaborating entity "altsyncram" for hierarchy "LPM_ROM:inst2|altrom:srom|altsyncram:rom_block"
+Info: Elaborated megafunction instantiation "LPM_ROM:inst2|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:inst2"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_6mv.tdf
+    Info: Found entity 1: altsyncram_6mv
+Info: Elaborating entity "altsyncram_6mv" for hierarchy "LPM_ROM:inst2|altrom:srom|altsyncram:rom_block|altsyncram_6mv:auto_generated"
+Error: Net "A[3]", which fans out to "inst10[3]", cannot be assigned more than one value
+    Error: Net is fed by "Addr[3]"
+    Error: Net is fed by "lpm_ff3:inst8|q[3]" File: C:/Users/iw4sp/Documents/My Dropbox/Кол+Юра+Мистер_Штрих_гурио/CИФО/lab_3/lpm_ff3.tdf Line: 43
+    Error: Net is fed by "lpm_ff3:inst7|q[3]" File: C:/Users/iw4sp/Documents/My Dropbox/Кол+Юра+Мистер_Штрих_гурио/CИФО/lab_3/lpm_ff3.tdf Line: 43
+Error: Net "A[2]", which fans out to "inst10[2]", cannot be assigned more than one value
+    Error: Net is fed by "Addr[2]"
+    Error: Net is fed by "lpm_ff3:inst8|q[2]" File: C:/Users/iw4sp/Documents/My Dropbox/Кол+Юра+Мистер_Штрих_гурио/CИФО/lab_3/lpm_ff3.tdf Line: 43
+    Error: Net is fed by "lpm_ff3:inst7|q[2]" File: C:/Users/iw4sp/Documents/My Dropbox/Кол+Юра+Мистер_Штрих_гурио/CИФО/lab_3/lpm_ff3.tdf Line: 43
+Error: Net "A[1]", which fans out to "inst10[1]", cannot be assigned more than one value
+    Error: Net is fed by "Addr[1]"
+    Error: Net is fed by "lpm_ff3:inst8|q[1]" File: C:/Users/iw4sp/Documents/My Dropbox/Кол+Юра+Мистер_Штрих_гурио/CИФО/lab_3/lpm_ff3.tdf Line: 43
+    Error: Net is fed by "lpm_ff3:inst7|q[1]" File: C:/Users/iw4sp/Documents/My Dropbox/Кол+Юра+Мистер_Штрих_гурио/CИФО/lab_3/lpm_ff3.tdf Line: 43
+Error: Net "A[0]", which fans out to "inst10[0]", cannot be assigned more than one value
+    Error: Net is fed by "Addr[0]"
+    Error: Net is fed by "lpm_ff3:inst8|q[0]" File: C:/Users/iw4sp/Documents/My Dropbox/Кол+Юра+Мистер_Штрих_гурио/CИФО/lab_3/lpm_ff3.tdf Line: 43
+    Error: Net is fed by "lpm_ff3:inst7|q[0]" File: C:/Users/iw4sp/Documents/My Dropbox/Кол+Юра+Мистер_Штрих_гурио/CИФО/lab_3/lpm_ff3.tdf Line: 43
+Error: Quartus II Analysis & Synthesis was unsuccessful. 16 errors, 4 warnings
+    Error: Peak virtual memory: 202 megabytes
+    Error: Processing ended: Mon Apr 16 20:17:20 2012
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:10
+
+
