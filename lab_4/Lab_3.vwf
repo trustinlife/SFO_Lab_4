@@ -25,7 +25,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 1000.0;
+	DATA_DURATION = 3000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
@@ -474,7 +474,7 @@ TRANSITION_LIST("clock")
 			LEVEL 1 FOR 5.0;
 			NODE
 			{
-				REPEAT = 98;
+				REPEAT = 298;
 				LEVEL 0 FOR 5.0;
 				LEVEL 1 FOR 5.0;
 			}
@@ -490,9 +490,19 @@ TRANSITION_LIST("ROM/RAM")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 280.0;
+		LEVEL 0 FOR 720.0;
+		LEVEL 1 FOR 280.0;
 		LEVEL 0 FOR 360.0;
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 280.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 280.0;
+			LEVEL 0 FOR 360.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 280.0;
+		}
 	}
 }
 
@@ -501,7 +511,7 @@ TRANSITION_LIST("DataOut[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -510,7 +520,7 @@ TRANSITION_LIST("DataOut[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -519,7 +529,7 @@ TRANSITION_LIST("DataOut[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -528,7 +538,7 @@ TRANSITION_LIST("DataOut[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -537,7 +547,7 @@ TRANSITION_LIST("DataOut[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -546,7 +556,7 @@ TRANSITION_LIST("DataOut[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -555,7 +565,7 @@ TRANSITION_LIST("DataOut[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -564,7 +574,7 @@ TRANSITION_LIST("DataOut[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -573,7 +583,13 @@ TRANSITION_LIST("we/re")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 440.0;
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 520.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 380.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 900.0;
 		LEVEL 1 FOR 100.0;
 		LEVEL 0 FOR 460.0;
 	}
@@ -584,10 +600,12 @@ TRANSITION_LIST("Reg_WE/RE")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 410.0;
-		LEVEL 0 FOR 170.0;
-		LEVEL 1 FOR 330.0;
-		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 500.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 1940.0;
 	}
 }
 
@@ -596,15 +614,21 @@ TRANSITION_LIST("Reg_clk")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 95.0;
-		LEVEL 1 FOR 5.0;
 		NODE
 		{
-			REPEAT = 14;
+			REPEAT = 8;
 			LEVEL 0 FOR 5.0;
 			LEVEL 1 FOR 5.0;
 		}
-		LEVEL 0 FOR 760.0;
+		LEVEL 0 FOR 525.0;
+		LEVEL 1 FOR 5.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+		LEVEL 0 FOR 2320.0;
 	}
 }
 
@@ -613,7 +637,7 @@ TRANSITION_LIST("RAM_addr[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -622,7 +646,7 @@ TRANSITION_LIST("RAM_addr[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 3000.0;
 	}
 }
 
@@ -631,7 +655,7 @@ TRANSITION_LIST("RAM_addr[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -640,7 +664,7 @@ TRANSITION_LIST("RAM_addr[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 3000.0;
 	}
 }
 
@@ -651,7 +675,27 @@ TRANSITION_LIST("RAM_reg_clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 100;
+			REPEAT = 60;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+			NODE
+			{
+				REPEAT = 59;
+				LEVEL 0 FOR 5.0;
+				LEVEL 1 FOR 5.0;
+			}
+		}
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		NODE
+		{
+			REPEAT = 179;
 			LEVEL 0 FOR 5.0;
 			LEVEL 1 FOR 5.0;
 		}
@@ -663,7 +707,7 @@ TRANSITION_LIST("ROM_addr[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 3000.0;
 	}
 }
 
@@ -672,7 +716,7 @@ TRANSITION_LIST("ROM_addr[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -681,7 +725,7 @@ TRANSITION_LIST("ROM_addr[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 3000.0;
 	}
 }
 
@@ -690,7 +734,7 @@ TRANSITION_LIST("ROM_addr[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -701,7 +745,27 @@ TRANSITION_LIST("ROM_reg_clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 100;
+			REPEAT = 60;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+			NODE
+			{
+				REPEAT = 59;
+				LEVEL 0 FOR 5.0;
+				LEVEL 1 FOR 5.0;
+			}
+		}
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		NODE
+		{
+			REPEAT = 179;
 			LEVEL 0 FOR 5.0;
 			LEVEL 1 FOR 5.0;
 		}
@@ -714,9 +778,13 @@ TRANSITION_LIST("Reg/Mem")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 240.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 140.0;
 		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 460.0;
+		LEVEL 0 FOR 280.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 1940.0;
 	}
 }
 
@@ -725,7 +793,7 @@ TRANSITION_LIST("dec_in_data[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -734,7 +802,7 @@ TRANSITION_LIST("dec_in_data[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -743,7 +811,7 @@ TRANSITION_LIST("dec_in_data[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -752,7 +820,7 @@ TRANSITION_LIST("iterations[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -761,7 +829,7 @@ TRANSITION_LIST("iterations[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 1 FOR 3000.0;
 	}
 }
 
@@ -770,7 +838,7 @@ TRANSITION_LIST("iterations[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -781,10 +849,11 @@ TRANSITION_LIST("inc_clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 5;
-			LEVEL 0 FOR 100.0;
-			LEVEL 1 FOR 100.0;
+			REPEAT = 7;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 200.0;
 		}
+		LEVEL 0 FOR 200.0;
 	}
 }
 
@@ -795,10 +864,11 @@ TRANSITION_LIST("dec_clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 5;
-			LEVEL 0 FOR 100.0;
-			LEVEL 1 FOR 100.0;
+			REPEAT = 7;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 200.0;
 		}
+		LEVEL 0 FOR 200.0;
 	}
 }
 
@@ -807,13 +877,9 @@ TRANSITION_LIST("dec_sload")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 4;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
-		}
-		LEVEL 0 FOR 960.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 2760.0;
 	}
 }
 
@@ -822,7 +888,7 @@ TRANSITION_LIST("ADDR_OUT[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -831,7 +897,7 @@ TRANSITION_LIST("ADDR_OUT[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -840,7 +906,7 @@ TRANSITION_LIST("ADDR_OUT[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -849,7 +915,7 @@ TRANSITION_LIST("ADDR_OUT[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 3000.0;
 	}
 }
 
