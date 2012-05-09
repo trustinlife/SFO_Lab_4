@@ -5,29 +5,29 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.417 ns
-From           : Reg/Mem
-To             : lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_g891:auto_generated|ram_block1a0~porta_datain_reg0
+Actual Time    : 3.901 ns
+From           : Load/Read
+To             : lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[5]
 From Clock     : --
-To Clock       : clock
+To Clock       : CLK
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.098 ns
-From           : lpm_rom1:inst5|altsyncram:altsyncram_component|altsyncram_lp61:auto_generated|q_a[0]
-To             : DataOut[0]
-From Clock     : clock
+Actual Time    : 7.245 ns
+From           : lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[7]
+To             : reg_1[7]
+From Clock     : CLK
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 12.804 ns
-From           : Reg/Mem
-To             : DataOut[0]
+Actual Time    : 9.043 ns
+From           : Load/Read
+To             : DataOUT[6]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,51 +35,11 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.227 ns
-From           : RAM_addr[0]
-To             : lpm_counter3:inst30|lpm_counter:lpm_counter_component|cntr_auj:auto_generated|safe_q[0]
+Actual Time    : -2.031 ns
+From           : DataIN[4]
+To             : lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[4]
 From Clock     : --
-To Clock       : inc_clk
-Failed Paths   : 0
-
-Type           : Clock Setup: 'clock'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 269.47 MHz ( period = 3.711 ns )
-From           : lpm_rom1:inst5|altsyncram:altsyncram_component|altsyncram_lp61:auto_generated|q_a[0]
-To             : lpm_ram_io:inst1|altram:sram|altsyncram:ram_block|altsyncram_g891:auto_generated|ram_block1a0~porta_datain_reg0
-From Clock     : clock
-To Clock       : clock
-Failed Paths   : 0
-
-Type           : Clock Setup: 'Reg_clk'
-Slack          : N/A
-Required Time  : None
-Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : lpm_ff2:inst6|lpm_ff:lpm_ff_component|dffs[6]
-To             : lpm_ff2:inst6|lpm_ff:lpm_ff_component|dffs[6]
-From Clock     : Reg_clk
-To Clock       : Reg_clk
-Failed Paths   : 0
-
-Type           : Clock Setup: 'dec_clk'
-Slack          : N/A
-Required Time  : None
-Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : lpm_counter2:inst28|lpm_counter:lpm_counter_component|cntr_6li:auto_generated|safe_q[0]
-To             : lpm_counter2:inst28|lpm_counter:lpm_counter_component|cntr_6li:auto_generated|safe_q[2]
-From Clock     : dec_clk
-To Clock       : dec_clk
-Failed Paths   : 0
-
-Type           : Clock Setup: 'inc_clk'
-Slack          : N/A
-Required Time  : None
-Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
-From           : lpm_counter3:inst31|lpm_counter:lpm_counter_component|cntr_auj:auto_generated|safe_q[0]
-To             : lpm_counter3:inst31|lpm_counter:lpm_counter_component|cntr_auj:auto_generated|safe_q[3]
-From Clock     : inc_clk
-To Clock       : inc_clk
+To Clock       : CLK
 Failed Paths   : 0
 
 Type           : Total number of failed paths

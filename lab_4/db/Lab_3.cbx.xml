@@ -1,11 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Lab_3">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Lab_3|lpm_counter3:inst31|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_auj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Lab_3|LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_g891.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Lab_3|lpm_compare0:inst29|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_cig.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Lab_3|lpm_counter2:inst28|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6li.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Lab_3|lpm_counter3:inst30|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_auj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Lab_3|lpm_rom1:inst5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lp61.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
