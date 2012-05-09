@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab_3
-Wed May 09 20:19:08 2012
+Wed May 09 23:29:15 2012
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -14,12 +14,27 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: lpm_ff5:Register_4|lpm_ff:lpm_ff_component
- 10. Parameter Settings for User Entity Instance: lpm_ff5:Register_3|lpm_ff:lpm_ff_component
- 11. Parameter Settings for User Entity Instance: lpm_ff5:Register_2|lpm_ff:lpm_ff_component
- 12. Parameter Settings for User Entity Instance: lpm_ff5:Register_1|lpm_ff:lpm_ff_component
- 13. Parameter Settings for User Entity Instance: lpm_ff6:inst21|lpm_ff:lpm_ff_component
- 14. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: lpm_ff5:Register_2|lpm_ff:lpm_ff_component
+ 10. Parameter Settings for User Entity Instance: lpm_ff5:Register_4|lpm_ff:lpm_ff_component
+ 11. Parameter Settings for User Entity Instance: lpm_ff5:Register_5|lpm_ff:lpm_ff_component
+ 12. Parameter Settings for User Entity Instance: lpm_ff5:Register_6|lpm_ff:lpm_ff_component
+ 13. Parameter Settings for User Entity Instance: lpm_ff5:Register_7|lpm_ff:lpm_ff_component
+ 14. Parameter Settings for User Entity Instance: lpm_ff5:Register_8|lpm_ff:lpm_ff_component
+ 15. Parameter Settings for User Entity Instance: lpm_ff5:Register_9|lpm_ff:lpm_ff_component
+ 16. Parameter Settings for User Entity Instance: lpm_ff5:Register_10|lpm_ff:lpm_ff_component
+ 17. Parameter Settings for User Entity Instance: lpm_ff5:Register_11|lpm_ff:lpm_ff_component
+ 18. Parameter Settings for User Entity Instance: lpm_ff5:Register_12|lpm_ff:lpm_ff_component
+ 19. Parameter Settings for User Entity Instance: lpm_ff5:Register_13|lpm_ff:lpm_ff_component
+ 20. Parameter Settings for User Entity Instance: lpm_ff5:Register_14|lpm_ff:lpm_ff_component
+ 21. Parameter Settings for User Entity Instance: lpm_ff5:Register_15|lpm_ff:lpm_ff_component
+ 22. Parameter Settings for User Entity Instance: lpm_ff5:Register_16|lpm_ff:lpm_ff_component
+ 23. Parameter Settings for User Entity Instance: lpm_ff5:Register_17|lpm_ff:lpm_ff_component
+ 24. Parameter Settings for User Entity Instance: lpm_ff5:Register_18|lpm_ff:lpm_ff_component
+ 25. Parameter Settings for User Entity Instance: lpm_ff5:Register_19|lpm_ff:lpm_ff_component
+ 26. Parameter Settings for User Entity Instance: lpm_ff5:Register_20|lpm_ff:lpm_ff_component
+ 27. Parameter Settings for User Entity Instance: lpm_ff5:Register_3|lpm_ff:lpm_ff_component
+ 28. Parameter Settings for User Entity Instance: lpm_ff5:Register_1|lpm_ff:lpm_ff_component
+ 29. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +60,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                            ;
 +-------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Wed May 09 20:19:08 2012   ;
+; Analysis & Synthesis Status   ; Successful - Wed May 09 23:29:14 2012   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; Lab_3                                   ;
 ; Top-level Entity Name         ; Registers                               ;
 ; Family                        ; Stratix II                              ;
 ; Logic utilization             ; N/A                                     ;
-;     Combinational ALUTs       ; 49                                      ;
-;     Dedicated logic registers ; 32                                      ;
-; Total registers               ; 32                                      ;
-; Total pins                    ; 67                                      ;
+;     Combinational ALUTs       ; 270                                     ;
+;     Dedicated logic registers ; 160                                     ;
+; Total registers               ; 160                                     ;
+; Total pins                    ; 59                                      ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 0                                       ;
 ; DSP block 9-bit elements      ; 0                                       ;
@@ -164,65 +179,96 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; lpm_ff5.tdf                      ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Gurio/GIT/SFO_Lab4/lab_4/lpm_ff5.tdf           ;
 ; lpm_ff.inc                       ; yes             ; Auto-Found AHDL File               ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.inc ;
 ; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.tdf ;
-; lpm_ff6.tdf                      ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Gurio/GIT/SFO_Lab4/lab_4/lpm_ff6.tdf           ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+-----------------------------------------------+---------+
-; Resource                                      ; Usage   ;
-+-----------------------------------------------+---------+
-; Estimated ALUTs Used                          ; 49      ;
-; Dedicated logic registers                     ; 32      ;
-;                                               ;         ;
-; Estimated ALUTs Unavailable                   ; 8       ;
-;                                               ;         ;
-; Total combinational functions                 ; 49      ;
-; Combinational ALUT usage by number of inputs  ;         ;
-;     -- 7 input functions                      ; 0       ;
-;     -- 6 input functions                      ; 8       ;
-;     -- 5 input functions                      ; 1       ;
-;     -- 4 input functions                      ; 40      ;
-;     -- <=3 input functions                    ; 0       ;
-;                                               ;         ;
-; Combinational ALUTs by mode                   ;         ;
-;     -- normal mode                            ; 49      ;
-;     -- extended LUT mode                      ; 0       ;
-;     -- arithmetic mode                        ; 0       ;
-;     -- shared arithmetic mode                 ; 0       ;
-;                                               ;         ;
-; Estimated ALUT/register pairs used            ; 57      ;
-;                                               ;         ;
-; Total registers                               ; 32      ;
-;     -- Dedicated logic registers              ; 32      ;
-;     -- I/O registers                          ; 0       ;
-;                                               ;         ;
-; Estimated ALMs:  partially or completely used ; 29      ;
-;                                               ;         ;
-; I/O pins                                      ; 67      ;
-; Maximum fan-out node                          ; WrE/ReE ;
-; Maximum fan-out                               ; 41      ;
-; Total fan-out                                 ; 301     ;
-; Average fan-out                               ; 2.03    ;
-+-----------------------------------------------+---------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++-----------------------------------------------+-----------+
+; Resource                                      ; Usage     ;
++-----------------------------------------------+-----------+
+; Estimated ALUTs Used                          ; 270       ;
+; Dedicated logic registers                     ; 160       ;
+;                                               ;           ;
+; Estimated ALUTs Unavailable                   ; 55        ;
+;                                               ;           ;
+; Total combinational functions                 ; 270       ;
+; Combinational ALUT usage by number of inputs  ;           ;
+;     -- 7 input functions                      ; 0         ;
+;     -- 6 input functions                      ; 55        ;
+;     -- 5 input functions                      ; 179       ;
+;     -- 4 input functions                      ; 7         ;
+;     -- <=3 input functions                    ; 29        ;
+;                                               ;           ;
+; Combinational ALUTs by mode                   ;           ;
+;     -- normal mode                            ; 270       ;
+;     -- extended LUT mode                      ; 0         ;
+;     -- arithmetic mode                        ; 0         ;
+;     -- shared arithmetic mode                 ; 0         ;
+;                                               ;           ;
+; Estimated ALUT/register pairs used            ; 325       ;
+;                                               ;           ;
+; Total registers                               ; 160       ;
+;     -- Dedicated logic registers              ; 160       ;
+;     -- I/O registers                          ; 0         ;
+;                                               ;           ;
+; Estimated ALMs:  partially or completely used ; 163       ;
+;                                               ;           ;
+; I/O pins                                      ; 59        ;
+; Maximum fan-out node                          ; inst[0]~0 ;
+; Maximum fan-out                               ; 160       ;
+; Total fan-out                                 ; 1675      ;
+; Average fan-out                               ; 3.43      ;
++-----------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
-+---------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------+--------------+
-; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Library Name ;
-+---------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------+--------------+
-; |Registers                      ; 49 (49)           ; 32 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 67   ; 0            ; |Registers                                            ; work         ;
-;    |lpm_ff5:Register_1|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_1                         ; work         ;
-;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_1|lpm_ff:lpm_ff_component ; work         ;
-;    |lpm_ff5:Register_2|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_2                         ; work         ;
-;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_2|lpm_ff:lpm_ff_component ; work         ;
-;    |lpm_ff5:Register_3|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_3                         ; work         ;
-;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_3|lpm_ff:lpm_ff_component ; work         ;
-;    |lpm_ff5:Register_4|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_4                         ;              ;
-;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_4|lpm_ff:lpm_ff_component ; work         ;
-+---------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++---------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Library Name ;
++---------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------+--------------+
+; |Registers                      ; 270 (270)         ; 160 (0)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 59   ; 0            ; |Registers                                             ; work         ;
+;    |lpm_ff5:Register_10|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_10                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_10|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_11|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_11                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_11|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_12|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_12                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_12|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_13|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_13                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_13|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_14|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_14                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_14|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_15|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_15                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_15|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_16|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_16                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_16|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_17|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_17                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_17|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_18|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_18                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_18|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_19|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_19                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_19|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_1|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_1                          ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_1|lpm_ff:lpm_ff_component  ; work         ;
+;    |lpm_ff5:Register_20|        ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_20                         ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_20|lpm_ff:lpm_ff_component ; work         ;
+;    |lpm_ff5:Register_2|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_2                          ;              ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_2|lpm_ff:lpm_ff_component  ; work         ;
+;    |lpm_ff5:Register_3|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_3                          ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_3|lpm_ff:lpm_ff_component  ; work         ;
+;    |lpm_ff5:Register_4|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_4                          ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_4|lpm_ff:lpm_ff_component  ; work         ;
+;    |lpm_ff5:Register_5|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_5                          ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_5|lpm_ff:lpm_ff_component  ; work         ;
+;    |lpm_ff5:Register_6|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_6                          ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_6|lpm_ff:lpm_ff_component  ; work         ;
+;    |lpm_ff5:Register_7|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_7                          ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_7|lpm_ff:lpm_ff_component  ; work         ;
+;    |lpm_ff5:Register_8|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_8                          ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_8|lpm_ff:lpm_ff_component  ; work         ;
+;    |lpm_ff5:Register_9|         ; 0 (0)             ; 8 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_9                          ; work         ;
+;       |lpm_ff:lpm_ff_component| ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Registers|lpm_ff5:Register_9|lpm_ff:lpm_ff_component  ; work         ;
++---------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -231,7 +277,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
+; Total registers                              ; 160   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -239,6 +285,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_2|lpm_ff:lpm_ff_component ;
++------------------------+------------+---------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                              ;
++------------------------+------------+---------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                           ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                           ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                           ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                    ;
++------------------------+------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------+
@@ -261,7 +326,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lpm_ff5:Register_3|lpm_ff:lpm_ff_component ;
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_5|lpm_ff:lpm_ff_component ;
 +------------------------+------------+---------------------------------------------------+
 ; Parameter Name         ; Value      ; Type                                              ;
 +------------------------+------------+---------------------------------------------------+
@@ -280,7 +345,292 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lpm_ff5:Register_2|lpm_ff:lpm_ff_component ;
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_6|lpm_ff:lpm_ff_component ;
++------------------------+------------+---------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                              ;
++------------------------+------------+---------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                           ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                           ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                           ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                    ;
++------------------------+------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_7|lpm_ff:lpm_ff_component ;
++------------------------+------------+---------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                              ;
++------------------------+------------+---------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                           ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                           ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                           ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                    ;
++------------------------+------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_8|lpm_ff:lpm_ff_component ;
++------------------------+------------+---------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                              ;
++------------------------+------------+---------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                           ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                           ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                           ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                    ;
++------------------------+------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_9|lpm_ff:lpm_ff_component ;
++------------------------+------------+---------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                              ;
++------------------------+------------+---------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                           ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                           ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                           ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                           ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                           ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                    ;
++------------------------+------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_10|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_11|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_12|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_13|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_14|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_15|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_16|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_17|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_18|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_19|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_20|lpm_ff:lpm_ff_component ;
++------------------------+------------+----------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                               ;
++------------------------+------------+----------------------------------------------------+
+; LPM_WIDTH              ; 8          ; Untyped                                            ;
+; LPM_AVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_SVALUE             ; UNUSED     ; Untyped                                            ;
+; LPM_FFTYPE             ; DFF        ; Untyped                                            ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                            ;
+; CBXI_PARAMETER         ; NOTHING    ; Untyped                                            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                     ;
++------------------------+------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ff5:Register_3|lpm_ff:lpm_ff_component ;
 +------------------------+------------+---------------------------------------------------+
 ; Parameter Name         ; Value      ; Type                                              ;
 +------------------------+------------+---------------------------------------------------+
@@ -317,32 +667,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lpm_ff6:inst21|lpm_ff:lpm_ff_component ;
-+------------------------+------------+-----------------------------------------------+
-; Parameter Name         ; Value      ; Type                                          ;
-+------------------------+------------+-----------------------------------------------+
-; LPM_WIDTH              ; 8          ; Untyped                                       ;
-; LPM_AVALUE             ; UNUSED     ; Untyped                                       ;
-; LPM_SVALUE             ; UNUSED     ; Untyped                                       ;
-; LPM_FFTYPE             ; DFF        ; Untyped                                       ;
-; DEVICE_FAMILY          ; Stratix II ; Untyped                                       ;
-; CBXI_PARAMETER         ; NOTHING    ; Untyped                                       ;
-; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                    ;
-; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                  ;
-; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                  ;
-; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                ;
-+------------------------+------------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Wed May 09 20:19:04 2012
+    Info: Processing started: Wed May 09 23:29:11 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_3 -c Lab_3
 Info: Found 1 design units, including 1 entities, in source file lab_3.bdf
     Info: Found entity 1: Lab_3
@@ -351,100 +682,346 @@ Info: Found 1 design units, including 1 entities, in source file registers.bdf
 Info: Found 1 design units, including 1 entities, in source file lab4.bdf
     Info: Found entity 1: lab4
 Info: Elaborating entity "Registers" for the top level hierarchy
-Warning: Primitive "NOT" of instance "inst8" not used
 Warning: Using design file lpm_ff5.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: lpm_ff5
-Info: Elaborating entity "lpm_ff5" for hierarchy "lpm_ff5:Register_4"
-Info: Elaborating entity "lpm_ff" for hierarchy "lpm_ff5:Register_4|lpm_ff:lpm_ff_component"
-Info: Elaborated megafunction instantiation "lpm_ff5:Register_4|lpm_ff:lpm_ff_component"
-Info: Instantiated megafunction "lpm_ff5:Register_4|lpm_ff:lpm_ff_component" with the following parameter:
-    Info: Parameter "LPM_TYPE" = "LPM_FF"
-    Info: Parameter "LPM_WIDTH" = "8"
-    Info: Parameter "LPM_FFTYPE" = "DFF"
-Warning: Using design file lpm_ff6.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: lpm_ff6
-Info: Elaborating entity "lpm_ff6" for hierarchy "lpm_ff6:inst21"
-Info: Elaborating entity "lpm_ff" for hierarchy "lpm_ff6:inst21|lpm_ff:lpm_ff_component"
-Info: Elaborated megafunction instantiation "lpm_ff6:inst21|lpm_ff:lpm_ff_component"
-Info: Instantiated megafunction "lpm_ff6:inst21|lpm_ff:lpm_ff_component" with the following parameter:
+Info: Elaborating entity "lpm_ff5" for hierarchy "lpm_ff5:Register_2"
+Info: Elaborating entity "lpm_ff" for hierarchy "lpm_ff5:Register_2|lpm_ff:lpm_ff_component"
+Info: Elaborated megafunction instantiation "lpm_ff5:Register_2|lpm_ff:lpm_ff_component"
+Info: Instantiated megafunction "lpm_ff5:Register_2|lpm_ff:lpm_ff_component" with the following parameter:
     Info: Parameter "LPM_TYPE" = "LPM_FF"
     Info: Parameter "LPM_WIDTH" = "8"
     Info: Parameter "LPM_FFTYPE" = "DFF"
 Warning: Tri-state node(s) do not directly drive top-level pin(s)
-    Warning: Converted the fan-out from the tri-state buffer "inst[7]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst[6]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst[5]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst[4]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst[3]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst[2]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst[1]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst[0]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst15[7]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst12[7]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst9[7]" to the node "lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst15[6]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst12[6]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst15[7]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst18[7]" to the node "lpm_ff5:Register_5|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst41[7]" to the node "lpm_ff5:Register_6|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst47[7]" to the node "lpm_ff5:Register_7|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst53[7]" to the node "lpm_ff5:Register_8|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst59[7]" to the node "lpm_ff5:Register_9|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst65[7]" to the node "lpm_ff5:Register_10|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst71[7]" to the node "lpm_ff5:Register_11|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst77[7]" to the node "lpm_ff5:Register_12|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst83[7]" to the node "lpm_ff5:Register_13|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst89[7]" to the node "lpm_ff5:Register_14|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst95[7]" to the node "lpm_ff5:Register_15|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst101[7]" to the node "lpm_ff5:Register_16|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst107[7]" to the node "lpm_ff5:Register_17|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst113[7]" to the node "lpm_ff5:Register_18|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst119[7]" to the node "lpm_ff5:Register_19|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst125[7]" to the node "lpm_ff5:Register_20|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst12[7]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst[7]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[7]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst9[6]" to the node "lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst15[5]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst12[5]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst15[6]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst18[6]" to the node "lpm_ff5:Register_5|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst41[6]" to the node "lpm_ff5:Register_6|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst47[6]" to the node "lpm_ff5:Register_7|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst53[6]" to the node "lpm_ff5:Register_8|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst59[6]" to the node "lpm_ff5:Register_9|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst65[6]" to the node "lpm_ff5:Register_10|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst71[6]" to the node "lpm_ff5:Register_11|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst77[6]" to the node "lpm_ff5:Register_12|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst83[6]" to the node "lpm_ff5:Register_13|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst89[6]" to the node "lpm_ff5:Register_14|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst95[6]" to the node "lpm_ff5:Register_15|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst101[6]" to the node "lpm_ff5:Register_16|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst107[6]" to the node "lpm_ff5:Register_17|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst113[6]" to the node "lpm_ff5:Register_18|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst119[6]" to the node "lpm_ff5:Register_19|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst125[6]" to the node "lpm_ff5:Register_20|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst12[6]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst[6]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[6]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst9[5]" to the node "lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst15[4]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst12[4]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst15[5]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst18[5]" to the node "lpm_ff5:Register_5|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst41[5]" to the node "lpm_ff5:Register_6|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst47[5]" to the node "lpm_ff5:Register_7|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst53[5]" to the node "lpm_ff5:Register_8|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst59[5]" to the node "lpm_ff5:Register_9|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst65[5]" to the node "lpm_ff5:Register_10|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst71[5]" to the node "lpm_ff5:Register_11|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst77[5]" to the node "lpm_ff5:Register_12|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst83[5]" to the node "lpm_ff5:Register_13|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst89[5]" to the node "lpm_ff5:Register_14|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst95[5]" to the node "lpm_ff5:Register_15|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst101[5]" to the node "lpm_ff5:Register_16|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst107[5]" to the node "lpm_ff5:Register_17|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst113[5]" to the node "lpm_ff5:Register_18|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst119[5]" to the node "lpm_ff5:Register_19|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst125[5]" to the node "lpm_ff5:Register_20|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst12[5]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst[5]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[5]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst9[4]" to the node "lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst15[3]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst12[3]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst15[4]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst18[4]" to the node "lpm_ff5:Register_5|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst41[4]" to the node "lpm_ff5:Register_6|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst47[4]" to the node "lpm_ff5:Register_7|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst53[4]" to the node "lpm_ff5:Register_8|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst59[4]" to the node "lpm_ff5:Register_9|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst65[4]" to the node "lpm_ff5:Register_10|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst71[4]" to the node "lpm_ff5:Register_11|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst77[4]" to the node "lpm_ff5:Register_12|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst83[4]" to the node "lpm_ff5:Register_13|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst89[4]" to the node "lpm_ff5:Register_14|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst95[4]" to the node "lpm_ff5:Register_15|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst101[4]" to the node "lpm_ff5:Register_16|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst107[4]" to the node "lpm_ff5:Register_17|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst113[4]" to the node "lpm_ff5:Register_18|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst119[4]" to the node "lpm_ff5:Register_19|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst125[4]" to the node "lpm_ff5:Register_20|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst12[4]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst[4]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[4]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst9[3]" to the node "lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst15[2]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst12[2]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst15[3]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst18[3]" to the node "lpm_ff5:Register_5|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst41[3]" to the node "lpm_ff5:Register_6|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst47[3]" to the node "lpm_ff5:Register_7|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst53[3]" to the node "lpm_ff5:Register_8|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst59[3]" to the node "lpm_ff5:Register_9|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst65[3]" to the node "lpm_ff5:Register_10|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst71[3]" to the node "lpm_ff5:Register_11|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst77[3]" to the node "lpm_ff5:Register_12|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst83[3]" to the node "lpm_ff5:Register_13|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst89[3]" to the node "lpm_ff5:Register_14|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst95[3]" to the node "lpm_ff5:Register_15|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst101[3]" to the node "lpm_ff5:Register_16|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst107[3]" to the node "lpm_ff5:Register_17|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst113[3]" to the node "lpm_ff5:Register_18|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst119[3]" to the node "lpm_ff5:Register_19|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst125[3]" to the node "lpm_ff5:Register_20|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst12[3]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst[3]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[3]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst9[2]" to the node "lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst15[1]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst12[1]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst15[2]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst18[2]" to the node "lpm_ff5:Register_5|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst41[2]" to the node "lpm_ff5:Register_6|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst47[2]" to the node "lpm_ff5:Register_7|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst53[2]" to the node "lpm_ff5:Register_8|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst59[2]" to the node "lpm_ff5:Register_9|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst65[2]" to the node "lpm_ff5:Register_10|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst71[2]" to the node "lpm_ff5:Register_11|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst77[2]" to the node "lpm_ff5:Register_12|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst83[2]" to the node "lpm_ff5:Register_13|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst89[2]" to the node "lpm_ff5:Register_14|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst95[2]" to the node "lpm_ff5:Register_15|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst101[2]" to the node "lpm_ff5:Register_16|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst107[2]" to the node "lpm_ff5:Register_17|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst113[2]" to the node "lpm_ff5:Register_18|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst119[2]" to the node "lpm_ff5:Register_19|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst125[2]" to the node "lpm_ff5:Register_20|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst12[2]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst[2]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[2]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst9[1]" to the node "lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst15[0]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst12[0]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst15[1]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst18[1]" to the node "lpm_ff5:Register_5|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst41[1]" to the node "lpm_ff5:Register_6|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst47[1]" to the node "lpm_ff5:Register_7|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst53[1]" to the node "lpm_ff5:Register_8|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst59[1]" to the node "lpm_ff5:Register_9|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst65[1]" to the node "lpm_ff5:Register_10|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst71[1]" to the node "lpm_ff5:Register_11|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst77[1]" to the node "lpm_ff5:Register_12|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst83[1]" to the node "lpm_ff5:Register_13|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst89[1]" to the node "lpm_ff5:Register_14|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst95[1]" to the node "lpm_ff5:Register_15|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst101[1]" to the node "lpm_ff5:Register_16|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst107[1]" to the node "lpm_ff5:Register_17|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst113[1]" to the node "lpm_ff5:Register_18|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst119[1]" to the node "lpm_ff5:Register_19|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst125[1]" to the node "lpm_ff5:Register_20|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst12[1]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst[1]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[1]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst9[0]" to the node "lpm_ff5:Register_2|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst25[7]" to the node "inst[7]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst25[6]" to the node "inst[6]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst25[5]" to the node "inst[5]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst25[4]" to the node "inst[4]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst25[3]" to the node "inst[3]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst25[2]" to the node "inst[2]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst25[1]" to the node "inst[1]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst25[0]" to the node "inst[0]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst31[7]" to the node "inst15[7]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst29[7]" to the node "inst12[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst15[0]" to the node "lpm_ff5:Register_4|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst18[0]" to the node "lpm_ff5:Register_5|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst41[0]" to the node "lpm_ff5:Register_6|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst47[0]" to the node "lpm_ff5:Register_7|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst53[0]" to the node "lpm_ff5:Register_8|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst59[0]" to the node "lpm_ff5:Register_9|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst65[0]" to the node "lpm_ff5:Register_10|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst71[0]" to the node "lpm_ff5:Register_11|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst77[0]" to the node "lpm_ff5:Register_12|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst83[0]" to the node "lpm_ff5:Register_13|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst89[0]" to the node "lpm_ff5:Register_14|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst95[0]" to the node "lpm_ff5:Register_15|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst101[0]" to the node "lpm_ff5:Register_16|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst107[0]" to the node "lpm_ff5:Register_17|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst113[0]" to the node "lpm_ff5:Register_18|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst119[0]" to the node "lpm_ff5:Register_19|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst125[0]" to the node "lpm_ff5:Register_20|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst12[0]" to the node "lpm_ff5:Register_3|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst[0]" to the node "lpm_ff5:Register_1|lpm_ff:lpm_ff_component|dffs[0]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst27[7]" to the node "inst9[7]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst31[6]" to the node "inst15[6]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst29[6]" to the node "inst12[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst31[7]" to the node "inst15[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst33[7]" to the node "inst18[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst43[7]" to the node "inst41[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst49[7]" to the node "inst47[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst55[7]" to the node "inst53[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst61[7]" to the node "inst59[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst67[7]" to the node "inst65[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst73[7]" to the node "inst71[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst79[7]" to the node "inst77[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst85[7]" to the node "inst83[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst91[7]" to the node "inst89[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst97[7]" to the node "inst95[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst103[7]" to the node "inst101[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst109[7]" to the node "inst107[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst115[7]" to the node "inst113[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst121[7]" to the node "inst119[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst127[7]" to the node "inst125[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst29[7]" to the node "inst12[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst25[7]" to the node "inst[7]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst27[6]" to the node "inst9[6]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst31[5]" to the node "inst15[5]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst29[5]" to the node "inst12[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst31[6]" to the node "inst15[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst33[6]" to the node "inst18[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst43[6]" to the node "inst41[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst49[6]" to the node "inst47[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst55[6]" to the node "inst53[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst61[6]" to the node "inst59[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst67[6]" to the node "inst65[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst73[6]" to the node "inst71[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst79[6]" to the node "inst77[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst85[6]" to the node "inst83[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst91[6]" to the node "inst89[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst97[6]" to the node "inst95[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst103[6]" to the node "inst101[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst109[6]" to the node "inst107[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst115[6]" to the node "inst113[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst121[6]" to the node "inst119[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst127[6]" to the node "inst125[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst29[6]" to the node "inst12[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst25[6]" to the node "inst[6]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst27[5]" to the node "inst9[5]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst31[4]" to the node "inst15[4]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst29[4]" to the node "inst12[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst31[5]" to the node "inst15[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst33[5]" to the node "inst18[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst43[5]" to the node "inst41[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst49[5]" to the node "inst47[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst55[5]" to the node "inst53[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst61[5]" to the node "inst59[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst67[5]" to the node "inst65[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst73[5]" to the node "inst71[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst79[5]" to the node "inst77[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst85[5]" to the node "inst83[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst91[5]" to the node "inst89[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst97[5]" to the node "inst95[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst103[5]" to the node "inst101[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst109[5]" to the node "inst107[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst115[5]" to the node "inst113[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst121[5]" to the node "inst119[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst127[5]" to the node "inst125[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst29[5]" to the node "inst12[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst25[5]" to the node "inst[5]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst27[4]" to the node "inst9[4]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst31[3]" to the node "inst15[3]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst29[3]" to the node "inst12[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst31[4]" to the node "inst15[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst33[4]" to the node "inst18[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst43[4]" to the node "inst41[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst49[4]" to the node "inst47[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst55[4]" to the node "inst53[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst61[4]" to the node "inst59[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst67[4]" to the node "inst65[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst73[4]" to the node "inst71[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst79[4]" to the node "inst77[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst85[4]" to the node "inst83[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst91[4]" to the node "inst89[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst97[4]" to the node "inst95[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst103[4]" to the node "inst101[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst109[4]" to the node "inst107[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst115[4]" to the node "inst113[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst121[4]" to the node "inst119[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst127[4]" to the node "inst125[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst29[4]" to the node "inst12[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst25[4]" to the node "inst[4]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst27[3]" to the node "inst9[3]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst31[2]" to the node "inst15[2]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst29[2]" to the node "inst12[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst31[3]" to the node "inst15[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst33[3]" to the node "inst18[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst43[3]" to the node "inst41[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst49[3]" to the node "inst47[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst55[3]" to the node "inst53[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst61[3]" to the node "inst59[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst67[3]" to the node "inst65[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst73[3]" to the node "inst71[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst79[3]" to the node "inst77[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst85[3]" to the node "inst83[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst91[3]" to the node "inst89[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst97[3]" to the node "inst95[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst103[3]" to the node "inst101[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst109[3]" to the node "inst107[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst115[3]" to the node "inst113[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst121[3]" to the node "inst119[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst127[3]" to the node "inst125[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst29[3]" to the node "inst12[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst25[3]" to the node "inst[3]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst27[2]" to the node "inst9[2]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst31[1]" to the node "inst15[1]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst29[1]" to the node "inst12[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst31[2]" to the node "inst15[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst33[2]" to the node "inst18[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst43[2]" to the node "inst41[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst49[2]" to the node "inst47[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst55[2]" to the node "inst53[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst61[2]" to the node "inst59[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst67[2]" to the node "inst65[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst73[2]" to the node "inst71[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst79[2]" to the node "inst77[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst85[2]" to the node "inst83[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst91[2]" to the node "inst89[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst97[2]" to the node "inst95[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst103[2]" to the node "inst101[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst109[2]" to the node "inst107[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst115[2]" to the node "inst113[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst121[2]" to the node "inst119[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst127[2]" to the node "inst125[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst29[2]" to the node "inst12[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst25[2]" to the node "inst[2]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst27[1]" to the node "inst9[1]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst31[0]" to the node "inst15[0]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst29[0]" to the node "inst12[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst31[1]" to the node "inst15[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst33[1]" to the node "inst18[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst43[1]" to the node "inst41[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst49[1]" to the node "inst47[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst55[1]" to the node "inst53[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst61[1]" to the node "inst59[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst67[1]" to the node "inst65[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst73[1]" to the node "inst71[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst79[1]" to the node "inst77[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst85[1]" to the node "inst83[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst91[1]" to the node "inst89[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst97[1]" to the node "inst95[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst103[1]" to the node "inst101[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst109[1]" to the node "inst107[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst115[1]" to the node "inst113[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst121[1]" to the node "inst119[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst127[1]" to the node "inst125[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst29[1]" to the node "inst12[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst25[1]" to the node "inst[1]" into an OR gate
     Warning: Converted the fan-out from the tri-state buffer "inst27[0]" to the node "inst9[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst31[0]" to the node "inst15[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst33[0]" to the node "inst18[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst43[0]" to the node "inst41[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst49[0]" to the node "inst47[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst55[0]" to the node "inst53[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst61[0]" to the node "inst59[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst67[0]" to the node "inst65[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst73[0]" to the node "inst71[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst79[0]" to the node "inst77[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst85[0]" to the node "inst83[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst91[0]" to the node "inst89[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst97[0]" to the node "inst95[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst103[0]" to the node "inst101[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst109[0]" to the node "inst107[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst115[0]" to the node "inst113[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst121[0]" to the node "inst119[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst127[0]" to the node "inst125[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst29[0]" to the node "inst12[0]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst25[0]" to the node "inst[0]" into an OR gate
 Warning: Tri-state node(s) do not directly drive top-level pin(s)
-    Warning: Converted the fan-out from the tri-state buffer "inst22[7]" to the node "inst25[7]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst22[6]" to the node "inst25[6]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst22[5]" to the node "inst25[5]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst22[4]" to the node "inst25[4]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst22[3]" to the node "inst25[3]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst22[2]" to the node "inst25[2]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst22[1]" to the node "inst25[1]" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "inst22[0]" to the node "inst25[0]" into an OR gate
-Warning: Design contains 36 input pin(s) that do not drive logic
+    Warning: Converted the fan-out from the tri-state buffer "inst22[7]" to the node "inst27[7]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst22[6]" to the node "inst27[6]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst22[5]" to the node "inst27[5]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst22[4]" to the node "inst27[4]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst22[3]" to the node "inst27[3]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst22[2]" to the node "inst27[2]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst22[1]" to the node "inst27[1]" into an OR gate
+    Warning: Converted the fan-out from the tri-state buffer "inst22[0]" to the node "inst27[0]" into an OR gate
+Warning: Design contains 20 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Managment[39]"
     Warning (15610): No output dependent on input pin "Managment[38]"
     Warning (15610): No output dependent on input pin "Managment[37]"
@@ -465,30 +1042,14 @@ Warning: Design contains 36 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Managment[22]"
     Warning (15610): No output dependent on input pin "Managment[21]"
     Warning (15610): No output dependent on input pin "Managment[20]"
-    Warning (15610): No output dependent on input pin "Managment[19]"
-    Warning (15610): No output dependent on input pin "Managment[18]"
-    Warning (15610): No output dependent on input pin "Managment[17]"
-    Warning (15610): No output dependent on input pin "Managment[16]"
-    Warning (15610): No output dependent on input pin "Managment[15]"
-    Warning (15610): No output dependent on input pin "Managment[14]"
-    Warning (15610): No output dependent on input pin "Managment[13]"
-    Warning (15610): No output dependent on input pin "Managment[12]"
-    Warning (15610): No output dependent on input pin "Managment[11]"
-    Warning (15610): No output dependent on input pin "Managment[10]"
-    Warning (15610): No output dependent on input pin "Managment[9]"
-    Warning (15610): No output dependent on input pin "Managment[8]"
-    Warning (15610): No output dependent on input pin "Managment[7]"
-    Warning (15610): No output dependent on input pin "Managment[6]"
-    Warning (15610): No output dependent on input pin "Managment[5]"
-    Warning (15610): No output dependent on input pin "Managment[4]"
-Info: Implemented 116 device resources after synthesis - the final resource count might be different
+Info: Implemented 329 device resources after synthesis - the final resource count might be different
     Info: Implemented 51 input pins
-    Info: Implemented 16 output pins
-    Info: Implemented 49 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 114 warnings
-    Info: Peak virtual memory: 209 megabytes
-    Info: Processing ended: Wed May 09 20:19:08 2012
+    Info: Implemented 8 output pins
+    Info: Implemented 270 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 352 warnings
+    Info: Peak virtual memory: 210 megabytes
+    Info: Processing ended: Wed May 09 23:29:15 2012
     Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:05
 
 
