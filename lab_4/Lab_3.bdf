@@ -611,107 +611,6 @@ applicable agreement for further details.
 	(flipx_rotate90)
 )
 (symbol
-	(rect 1096 104 1224 232)
-	(text "LPM_RAM_IO" (rect 25 0 122 16)(font "Arial" (font_size 10)))
-	(text "inst1" (rect 3 117 26 129)(font "Arial" ))
-	(port
-		(pt 0 24)
-		(input)
-		(text "address[LPM_WIDTHAD-1..0]" (rect 20 17 186 31)(font "Arial" (font_size 8)))
-		(text "address[]" (rect 20 17 74 31)(font "Arial" (font_size 8)))
-		(line (pt 0 24)(pt 16 24)(line_width 3))
-	)
-	(port
-		(pt 0 56)
-		(input)
-		(text "outclock" (rect 20 49 67 63)(font "Arial" (font_size 8)))
-		(text "outclock" (rect 20 49 67 63)(font "Arial" (font_size 8)))
-		(line (pt 0 56)(pt 16 56)(line_width 1))
-	)
-	(port
-		(pt 0 104)
-		(input)
-		(text "memenab" (rect 20 97 74 111)(font "Arial" (font_size 8)))
-		(text "memenab" (rect 20 97 74 111)(font "Arial" (font_size 8)))
-		(line (pt 0 104)(pt 16 104)(line_width 1))
-	)
-	(port
-		(pt 0 40)
-		(input)
-		(text "inclock" (rect 20 33 58 47)(font "Arial" (font_size 8)))
-		(text "inclock" (rect 20 33 58 47)(font "Arial" (font_size 8)))
-		(line (pt 0 40)(pt 16 40)(line_width 1))
-	)
-	(port
-		(pt 0 72)
-		(input)
-		(text "we" (rect 20 65 38 79)(font "Arial" (font_size 8)))
-		(text "we" (rect 20 65 38 79)(font "Arial" (font_size 8)))
-		(line (pt 0 72)(pt 16 72)(line_width 1))
-	)
-	(port
-		(pt 0 88)
-		(input)
-		(text "outenab" (rect 20 81 66 95)(font "Arial" (font_size 8)))
-		(text "outenab" (rect 20 81 66 95)(font "Arial" (font_size 8)))
-		(line (pt 0 88)(pt 16 88)(line_width 1))
-	)
-	(port
-		(pt 128 56)
-		(bidir)
-		(text "dio[LPM_WIDTH-1..0]" (rect 87 49 205 63)(font "Arial" (font_size 8)))
-		(text "dio[]" (rect 87 49 110 63)(font "Arial" (font_size 8)))
-		(line (pt 112 56)(pt 128 56)(line_width 3))
-	)
-	(parameter
-		"LPM_ADDRESS_CONTROL"
-		"REGISTERED"
-		"Should the address and control ports be registered?"
-		"\"REGISTERED\"" "\"UNREGISTERED\"" 
-		(type "PARAMETER_STRING")	)
-	(parameter
-		"LPM_FILE"
-		"RAM.hex"
-		"File containing initial contents of memory array"
-	)
-	(parameter
-		"LPM_INDATA"
-		"REGISTERED"
-		"Should the write data be registered?"
-		"\"REGISTERED\"" "\"UNREGISTERED\"" 
-		(type "PARAMETER_STRING")	)
-	(parameter
-		"LPM_NUMWORDS"
-		"16"
-		"Number of memory words, default is 2^LPM_WIDTHAD"
-	)
-	(parameter
-		"LPM_OUTDATA"
-		"REGISTERED"
-		"Should the output data be registered?"
-		"\"REGISTERED\"" "\"UNREGISTERED\"" 
-		(type "PARAMETER_STRING")	)
-	(parameter
-		"LPM_WIDTH"
-		"8"
-		"Data width in bits, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-	)
-	(parameter
-		"LPM_WIDTHAD"
-		"4"
-		"Number of address lines, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
-	)
-	(drawing
-		(line (pt 16 112)(pt 112 112)(line_width 1))
-		(line (pt 16 16)(pt 112 16)(line_width 1))
-		(line (pt 112 112)(pt 112 16)(line_width 1))
-		(line (pt 16 112)(pt 16 16)(line_width 1))
-	)
-	(annotation_block (parameter)(rect 1128 -352 1360 -240))
-)
-(symbol
 	(rect 904 520 1048 600)
 	(text "lpm_ff2" (rect 52 1 100 17)(font "Arial" (font_size 10)))
 	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
@@ -1231,6 +1130,107 @@ applicable agreement for further details.
 		(arc (pt 12 30)(pt 37 31)(rect 12 18 37 43)(line_width 1))
 	)
 	(flipy_rotate90)
+)
+(symbol
+	(rect 1096 104 1224 232)
+	(text "LPM_RAM_IO" (rect 25 0 122 16)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 3 117 26 129)(font "Arial" ))
+	(port
+		(pt 0 24)
+		(input)
+		(text "address[LPM_WIDTHAD-1..0]" (rect 20 17 186 31)(font "Arial" (font_size 8)))
+		(text "address[]" (rect 20 17 74 31)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24)(line_width 3))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "outclock" (rect 20 49 67 63)(font "Arial" (font_size 8)))
+		(text "outclock" (rect 20 49 67 63)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "memenab" (rect 20 97 74 111)(font "Arial" (font_size 8)))
+		(text "memenab" (rect 20 97 74 111)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104)(line_width 1))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "inclock" (rect 20 33 58 47)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 20 33 58 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40)(line_width 1))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "we" (rect 20 65 38 79)(font "Arial" (font_size 8)))
+		(text "we" (rect 20 65 38 79)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "outenab" (rect 20 81 66 95)(font "Arial" (font_size 8)))
+		(text "outenab" (rect 20 81 66 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 1))
+	)
+	(port
+		(pt 128 56)
+		(bidir)
+		(text "dio[LPM_WIDTH-1..0]" (rect 87 49 205 63)(font "Arial" (font_size 8)))
+		(text "dio[]" (rect 87 49 110 63)(font "Arial" (font_size 8)))
+		(line (pt 112 56)(pt 128 56)(line_width 3))
+	)
+	(parameter
+		"LPM_ADDRESS_CONTROL"
+		"REGISTERED"
+		"Should the address and control ports be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_STRING")	)
+	(parameter
+		"LPM_FILE"
+		"RAM.hex"
+		"File containing initial contents of memory array"
+	)
+	(parameter
+		"LPM_INDATA"
+		"REGISTERED"
+		"Should the write data be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_STRING")	)
+	(parameter
+		"LPM_NUMWORDS"
+		"16"
+		"Number of memory words, default is 2^LPM_WIDTHAD"
+	)
+	(parameter
+		"LPM_OUTDATA"
+		"REGISTERED"
+		"Should the output data be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_STRING")	)
+	(parameter
+		"LPM_WIDTH"
+		"8"
+		"Data width in bits, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"LPM_WIDTHAD"
+		"4"
+		"Number of address lines, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
+	)
+	(drawing
+		(line (pt 16 112)(pt 112 112)(line_width 1))
+		(line (pt 16 16)(pt 112 16)(line_width 1))
+		(line (pt 112 112)(pt 112 16)(line_width 1))
+		(line (pt 16 112)(pt 16 16)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 1128 -352 1360 -240))
 )
 (connector
 	(pt 1288 184)
