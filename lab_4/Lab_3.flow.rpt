@@ -1,5 +1,5 @@
 Flow report for Lab_3
-Sun May 13 23:11:01 2012
+Sun May 20 16:37:24 2012
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Sun May 13 23:11:01 2012   ;
+; Flow Status                   ; Successful - Sun May 20 16:37:24 2012   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; Lab_3                                   ;
 ; Top-level Entity Name         ; ROM_RAM                                 ;
@@ -50,9 +50,9 @@ applicable agreement for further details.
 ;     Combinational ALUTs       ; 17 / 12,480 ( < 1 % )                   ;
 ;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                      ;
 ; Total registers               ; 0                                       ;
-; Total pins                    ; 23 / 343 ( 7 % )                        ;
+; Total pins                    ; 27 / 343 ( 8 % )                        ;
 ; Total virtual pins            ; 0                                       ;
-; Total block memory bits       ; 256 / 419,328 ( < 1 % )                 ;
+; Total block memory bits       ; 4,096 / 419,328 ( < 1 % )               ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
 ; Total PLLs                    ; 0 / 6 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/13/2012 23:10:40 ;
+; Start date & time ; 05/20/2012 16:37:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab_3               ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 264414477851505.133693984003188 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 264414477851505.133752102706160 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_ROM                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
@@ -94,6 +94,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_DECODE                      ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_ROM                         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_ROM                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ROM                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
@@ -168,6 +170,9 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_rom4.tdf                    ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_rom4.bsf                    ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_rom4.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom6.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom6.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom6.inc                    ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; ROM_RAM     ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; ROM_RAM     ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; ROM_RAM                         ; Lab_3         ; --          ; --             ;
@@ -180,11 +185,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 219 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:10     ; 1.0                     ; 252 MB              ; 00:00:07                           ;
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 219 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:07     ; 1.0                     ; 252 MB              ; 00:00:07                           ;
 ; Assembler               ; 00:00:03     ; 1.0                     ; 227 MB              ; 00:00:03                           ;
-; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 159 MB              ; 00:00:01                           ;
-; Total                   ; 00:00:17     ; --                      ; --                  ; 00:00:13                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 157 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:12     ; --                      ; --                  ; 00:00:13                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
