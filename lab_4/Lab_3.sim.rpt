@@ -1,5 +1,5 @@
 Simulator report for Lab_3
-Sun May 20 16:41:50 2012
+Sun May 20 18:49:27 2012
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -10,14 +10,12 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
   2. Simulator Summary
   3. Simulator Settings
   4. Simulation Waveforms
-  5. |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ALTSYNCRAM
-  6. |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ALTSYNCRAM
-  7. Coverage Summary
-  8. Complete 1/0-Value Coverage
-  9. Missing 1-Value Coverage
- 10. Missing 0-Value Coverage
- 11. Simulator INI Usage
- 12. Simulator Messages
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
 
 
 
@@ -47,42 +45,42 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 127 nodes    ;
-; Simulation Coverage         ;      77.95 % ;
-; Total Number of Transitions ; 715          ;
+; Simulation Netlist Size     ; 80 nodes     ;
+; Simulation Coverage         ;      80.00 % ;
+; Total Number of Transitions ; 328          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                       ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
-; Option                                                                                     ; Setting     ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
-; Simulation mode                                                                            ; Functional  ; Timing        ;
-; Start time                                                                                 ; 0 ns        ; 0 ns          ;
-; End time                                                                                   ; 3000 ns     ;               ;
-; Simulation results format                                                                  ; CVWF        ;               ;
-; Vector input source                                                                        ; ROM_RAM.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
-; Check outputs                                                                              ; Off         ; Off           ;
-; Report simulation coverage                                                                 ; On          ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
-; Display missing 1-value coverage report                                                    ; On          ; On            ;
-; Display missing 0-value coverage report                                                    ; On          ; On            ;
-; Detect setup and hold time violations                                                      ; Off         ; Off           ;
-; Detect glitches                                                                            ; Off         ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
-; Generate Signal Activity File                                                              ; Off         ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
-; Group bus channels in simulation results                                                   ; Off         ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On          ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                                     ; Setting          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Simulation mode                                                                            ; Functional       ; Timing        ;
+; Start time                                                                                 ; 0 ns             ; 0 ns          ;
+; End time                                                                                   ; 3000 ns          ;               ;
+; Simulation results format                                                                  ; CVWF             ;               ;
+; Vector input source                                                                        ; Counduit2Bus.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On               ; On            ;
+; Check outputs                                                                              ; Off              ; Off           ;
+; Report simulation coverage                                                                 ; On               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On               ; On            ;
+; Display missing 1-value coverage report                                                    ; On               ; On            ;
+; Display missing 0-value coverage report                                                    ; On               ; On            ;
+; Detect setup and hold time violations                                                      ; Off              ; Off           ;
+; Detect glitches                                                                            ; Off              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off              ; Off           ;
+; Generate Signal Activity File                                                              ; Off              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto             ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
 
 
 +----------------------+
@@ -92,205 +90,125 @@ Waveform report data cannot be output to ASCII.
 Please use Quartus II to view the waveform report data.
 
 
-+----------------------------------------------------------------------------------------------------+
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ALTSYNCRAM ;
-+----------------------------------------------------------------------------------------------------+
-Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
-
-
-+---------------------------------------------------------------------------------------------------+
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ALTSYNCRAM ;
-+---------------------------------------------------------------------------------------------------+
-Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
-
-
 +--------------------------------------------------------------------+
 ; Coverage Summary                                                   ;
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      77.95 % ;
-; Total nodes checked                                 ; 127          ;
-; Total output ports checked                          ; 127          ;
-; Total output ports with complete 1/0-value coverage ; 99           ;
-; Total output ports with no 1/0-value coverage       ; 20           ;
-; Total output ports with no 1-value coverage         ; 22           ;
-; Total output ports with no 0-value coverage         ; 26           ;
+; Total coverage as a percentage                      ;      80.00 % ;
+; Total nodes checked                                 ; 80           ;
+; Total output ports checked                          ; 80           ;
+; Total output ports with complete 1/0-value coverage ; 64           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 16           ;
+; Total output ports with no 0-value coverage         ; 0            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                                                              ;
-+------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                            ; Output Port Name                                                                               ; Output Port Type ;
-+------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
-; |ROM_RAM|DataOUT[7]                                                                                  ; |ROM_RAM|DataOUT[7]                                                                            ; pin_out          ;
-; |ROM_RAM|DataOUT[6]                                                                                  ; |ROM_RAM|DataOUT[6]                                                                            ; pin_out          ;
-; |ROM_RAM|DataOUT[5]                                                                                  ; |ROM_RAM|DataOUT[5]                                                                            ; pin_out          ;
-; |ROM_RAM|DataOUT[4]                                                                                  ; |ROM_RAM|DataOUT[4]                                                                            ; pin_out          ;
-; |ROM_RAM|DataOUT[3]                                                                                  ; |ROM_RAM|DataOUT[3]                                                                            ; pin_out          ;
-; |ROM_RAM|DataOUT[2]                                                                                  ; |ROM_RAM|DataOUT[2]                                                                            ; pin_out          ;
-; |ROM_RAM|DataOUT[1]                                                                                  ; |ROM_RAM|DataOUT[1]                                                                            ; pin_out          ;
-; |ROM_RAM|DataOUT[0]                                                                                  ; |ROM_RAM|DataOUT[0]                                                                            ; pin_out          ;
-; |ROM_RAM|inst7[7]                                                                                    ; |ROM_RAM|inst7[7]                                                                              ; out              ;
-; |ROM_RAM|inst7[6]                                                                                    ; |ROM_RAM|inst7[6]                                                                              ; out              ;
-; |ROM_RAM|inst7[5]                                                                                    ; |ROM_RAM|inst7[5]                                                                              ; out              ;
-; |ROM_RAM|inst7[4]                                                                                    ; |ROM_RAM|inst7[4]                                                                              ; out              ;
-; |ROM_RAM|inst7[3]                                                                                    ; |ROM_RAM|inst7[3]                                                                              ; out              ;
-; |ROM_RAM|inst7[2]                                                                                    ; |ROM_RAM|inst7[2]                                                                              ; out              ;
-; |ROM_RAM|inst7[1]                                                                                    ; |ROM_RAM|inst7[1]                                                                              ; out              ;
-; |ROM_RAM|inst7[0]                                                                                    ; |ROM_RAM|inst7[0]                                                                              ; out              ;
-; |ROM_RAM|Data[7]                                                                                     ; |ROM_RAM|Data[7]                                                                               ; out0             ;
-; |ROM_RAM|Data[6]                                                                                     ; |ROM_RAM|Data[6]                                                                               ; out0             ;
-; |ROM_RAM|Data[5]                                                                                     ; |ROM_RAM|Data[5]                                                                               ; out0             ;
-; |ROM_RAM|Data[4]                                                                                     ; |ROM_RAM|Data[4]                                                                               ; out0             ;
-; |ROM_RAM|Data[3]                                                                                     ; |ROM_RAM|Data[3]                                                                               ; out0             ;
-; |ROM_RAM|Data[2]                                                                                     ; |ROM_RAM|Data[2]                                                                               ; out0             ;
-; |ROM_RAM|Data[1]                                                                                     ; |ROM_RAM|Data[1]                                                                               ; out0             ;
-; |ROM_RAM|Data[0]                                                                                     ; |ROM_RAM|Data[0]                                                                               ; out0             ;
-; |ROM_RAM|inst[7]                                                                                     ; |ROM_RAM|inst[7]                                                                               ; out              ;
-; |ROM_RAM|inst[6]                                                                                     ; |ROM_RAM|inst[6]                                                                               ; out              ;
-; |ROM_RAM|inst[5]                                                                                     ; |ROM_RAM|inst[5]                                                                               ; out              ;
-; |ROM_RAM|inst[4]                                                                                     ; |ROM_RAM|inst[4]                                                                               ; out              ;
-; |ROM_RAM|inst[3]                                                                                     ; |ROM_RAM|inst[3]                                                                               ; out              ;
-; |ROM_RAM|inst[2]                                                                                     ; |ROM_RAM|inst[2]                                                                               ; out              ;
-; |ROM_RAM|inst[1]                                                                                     ; |ROM_RAM|inst[1]                                                                               ; out              ;
-; |ROM_RAM|inst[0]                                                                                     ; |ROM_RAM|inst[0]                                                                               ; out              ;
-; |ROM_RAM|DataIN[7]                                                                                   ; |ROM_RAM|DataIN[7]                                                                             ; out              ;
-; |ROM_RAM|DataIN[6]                                                                                   ; |ROM_RAM|DataIN[6]                                                                             ; out              ;
-; |ROM_RAM|DataIN[5]                                                                                   ; |ROM_RAM|DataIN[5]                                                                             ; out              ;
-; |ROM_RAM|DataIN[4]                                                                                   ; |ROM_RAM|DataIN[4]                                                                             ; out              ;
-; |ROM_RAM|DataIN[3]                                                                                   ; |ROM_RAM|DataIN[3]                                                                             ; out              ;
-; |ROM_RAM|DataIN[2]                                                                                   ; |ROM_RAM|DataIN[2]                                                                             ; out              ;
-; |ROM_RAM|DataIN[1]                                                                                   ; |ROM_RAM|DataIN[1]                                                                             ; out              ;
-; |ROM_RAM|DataIN[0]                                                                                   ; |ROM_RAM|DataIN[0]                                                                             ; out              ;
-; |ROM_RAM|ReE/WrE                                                                                     ; |ROM_RAM|ReE/WrE                                                                               ; out              ;
-; |ROM_RAM|inst13[2]                                                                                   ; |ROM_RAM|inst13[2]                                                                             ; out              ;
-; |ROM_RAM|inst13[1]                                                                                   ; |ROM_RAM|inst13[1]                                                                             ; out              ;
-; |ROM_RAM|inst13[0]                                                                                   ; |ROM_RAM|inst13[0]                                                                             ; out              ;
-; |ROM_RAM|CLK                                                                                         ; |ROM_RAM|CLK                                                                                   ; out              ;
-; |ROM_RAM|inst10[0]                                                                                   ; |ROM_RAM|inst10[0]                                                                             ; out              ;
-; |ROM_RAM|AddressIN[3]                                                                                ; |ROM_RAM|AddressIN[3]                                                                          ; out              ;
-; |ROM_RAM|AddressIN[2]                                                                                ; |ROM_RAM|AddressIN[2]                                                                          ; out              ;
-; |ROM_RAM|AddressIN[1]                                                                                ; |ROM_RAM|AddressIN[1]                                                                          ; out              ;
-; |ROM_RAM|AddressIN[0]                                                                                ; |ROM_RAM|AddressIN[0]                                                                          ; out              ;
-; |ROM_RAM|inst12[7]                                                                                   ; |ROM_RAM|inst12[7]                                                                             ; out              ;
-; |ROM_RAM|inst12[6]                                                                                   ; |ROM_RAM|inst12[6]                                                                             ; out              ;
-; |ROM_RAM|inst12[5]                                                                                   ; |ROM_RAM|inst12[5]                                                                             ; out              ;
-; |ROM_RAM|inst12[4]                                                                                   ; |ROM_RAM|inst12[4]                                                                             ; out              ;
-; |ROM_RAM|inst12[3]                                                                                   ; |ROM_RAM|inst12[3]                                                                             ; out              ;
-; |ROM_RAM|inst12[2]                                                                                   ; |ROM_RAM|inst12[2]                                                                             ; out              ;
-; |ROM_RAM|inst12[1]                                                                                   ; |ROM_RAM|inst12[1]                                                                             ; out              ;
-; |ROM_RAM|inst12[0]                                                                                   ; |ROM_RAM|inst12[0]                                                                             ; out              ;
-; |ROM_RAM|Bus_dio[7]                                                                                  ; |ROM_RAM|Bus_dio[7]                                                                            ; out0             ;
-; |ROM_RAM|Bus_dio[6]                                                                                  ; |ROM_RAM|Bus_dio[6]                                                                            ; out0             ;
-; |ROM_RAM|Bus_dio[5]                                                                                  ; |ROM_RAM|Bus_dio[5]                                                                            ; out0             ;
-; |ROM_RAM|Bus_dio[4]                                                                                  ; |ROM_RAM|Bus_dio[4]                                                                            ; out0             ;
-; |ROM_RAM|Bus_dio[3]                                                                                  ; |ROM_RAM|Bus_dio[3]                                                                            ; out0             ;
-; |ROM_RAM|Bus_dio[2]                                                                                  ; |ROM_RAM|Bus_dio[2]                                                                            ; out0             ;
-; |ROM_RAM|Bus_dio[1]                                                                                  ; |ROM_RAM|Bus_dio[1]                                                                            ; out0             ;
-; |ROM_RAM|Bus_dio[0]                                                                                  ; |ROM_RAM|Bus_dio[0]                                                                            ; out0             ;
-; |ROM_RAM|inst9[3]                                                                                    ; |ROM_RAM|inst9[3]                                                                              ; out              ;
-; |ROM_RAM|inst9[2]                                                                                    ; |ROM_RAM|inst9[2]                                                                              ; out              ;
-; |ROM_RAM|inst9[1]                                                                                    ; |ROM_RAM|inst9[1]                                                                              ; out              ;
-; |ROM_RAM|inst9[0]                                                                                    ; |ROM_RAM|inst9[0]                                                                              ; out              ;
-; |ROM_RAM|inst16[7]                                                                                   ; |ROM_RAM|inst16[7]                                                                             ; out              ;
-; |ROM_RAM|inst16[6]                                                                                   ; |ROM_RAM|inst16[6]                                                                             ; out              ;
-; |ROM_RAM|inst16[5]                                                                                   ; |ROM_RAM|inst16[5]                                                                             ; out              ;
-; |ROM_RAM|inst16[4]                                                                                   ; |ROM_RAM|inst16[4]                                                                             ; out              ;
-; |ROM_RAM|inst16[3]                                                                                   ; |ROM_RAM|inst16[3]                                                                             ; out              ;
-; |ROM_RAM|inst16[2]                                                                                   ; |ROM_RAM|inst16[2]                                                                             ; out              ;
-; |ROM_RAM|inst16[1]                                                                                   ; |ROM_RAM|inst16[1]                                                                             ; out              ;
-; |ROM_RAM|inst16[0]                                                                                   ; |ROM_RAM|inst16[0]                                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|_~2                                                                          ; |ROM_RAM|lpm_ram_io:RAM|_~2                                                                    ; out0             ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[7]                                                                   ; |ROM_RAM|lpm_ram_io:RAM|datatri[7]                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[6]                                                                   ; |ROM_RAM|lpm_ram_io:RAM|datatri[6]                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[5]                                                                   ; |ROM_RAM|lpm_ram_io:RAM|datatri[5]                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[4]                                                                   ; |ROM_RAM|lpm_ram_io:RAM|datatri[4]                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[3]                                                                   ; |ROM_RAM|lpm_ram_io:RAM|datatri[3]                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[2]                                                                   ; |ROM_RAM|lpm_ram_io:RAM|datatri[2]                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[1]                                                                   ; |ROM_RAM|lpm_ram_io:RAM|datatri[1]                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[0]                                                                   ; |ROM_RAM|lpm_ram_io:RAM|datatri[0]                                                             ; out              ;
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a0 ; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[0] ; portadataout0    ;
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a1 ; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[1] ; portadataout0    ;
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a2 ; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[2] ; portadataout0    ;
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a3 ; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[3] ; portadataout0    ;
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a4 ; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[4] ; portadataout0    ;
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a5 ; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[5] ; portadataout0    ;
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a6 ; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[6] ; portadataout0    ;
-; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a7 ; |ROM_RAM|lpm_ram_io:RAM|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[7] ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a0  ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[0]  ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a1  ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[1]  ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a2  ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[2]  ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a4  ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[4]  ; portadataout0    ;
-+------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
++--------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                    ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |Counduit2Bus|ControlOUT[39] ; |Counduit2Bus|ControlOUT[39] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[38] ; |Counduit2Bus|ControlOUT[38] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[37] ; |Counduit2Bus|ControlOUT[37] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[36] ; |Counduit2Bus|ControlOUT[36] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[35] ; |Counduit2Bus|ControlOUT[35] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[34] ; |Counduit2Bus|ControlOUT[34] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[33] ; |Counduit2Bus|ControlOUT[33] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[32] ; |Counduit2Bus|ControlOUT[32] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[31] ; |Counduit2Bus|ControlOUT[31] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[30] ; |Counduit2Bus|ControlOUT[30] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[29] ; |Counduit2Bus|ControlOUT[29] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[28] ; |Counduit2Bus|ControlOUT[28] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[27] ; |Counduit2Bus|ControlOUT[27] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[26] ; |Counduit2Bus|ControlOUT[26] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[25] ; |Counduit2Bus|ControlOUT[25] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[24] ; |Counduit2Bus|ControlOUT[24] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[23] ; |Counduit2Bus|ControlOUT[23] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[22] ; |Counduit2Bus|ControlOUT[22] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[21] ; |Counduit2Bus|ControlOUT[21] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[20] ; |Counduit2Bus|ControlOUT[20] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[19] ; |Counduit2Bus|ControlOUT[19] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[18] ; |Counduit2Bus|ControlOUT[18] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[17] ; |Counduit2Bus|ControlOUT[17] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[16] ; |Counduit2Bus|ControlOUT[16] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[15] ; |Counduit2Bus|ControlOUT[15] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[14] ; |Counduit2Bus|ControlOUT[14] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[13] ; |Counduit2Bus|ControlOUT[13] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[12] ; |Counduit2Bus|ControlOUT[12] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[11] ; |Counduit2Bus|ControlOUT[11] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[10] ; |Counduit2Bus|ControlOUT[10] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[9]  ; |Counduit2Bus|ControlOUT[9]  ; pin_out          ;
+; |Counduit2Bus|ControlOUT[8]  ; |Counduit2Bus|ControlOUT[8]  ; pin_out          ;
+; |Counduit2Bus|Control_IN_39  ; |Counduit2Bus|Control_IN_39  ; out              ;
+; |Counduit2Bus|Control_IN_38  ; |Counduit2Bus|Control_IN_38  ; out              ;
+; |Counduit2Bus|Control_IN_37  ; |Counduit2Bus|Control_IN_37  ; out              ;
+; |Counduit2Bus|Control_IN_36  ; |Counduit2Bus|Control_IN_36  ; out              ;
+; |Counduit2Bus|Control_IN_35  ; |Counduit2Bus|Control_IN_35  ; out              ;
+; |Counduit2Bus|Control_IN_34  ; |Counduit2Bus|Control_IN_34  ; out              ;
+; |Counduit2Bus|Control_IN_33  ; |Counduit2Bus|Control_IN_33  ; out              ;
+; |Counduit2Bus|Control_IN_32  ; |Counduit2Bus|Control_IN_32  ; out              ;
+; |Counduit2Bus|Control_IN_31  ; |Counduit2Bus|Control_IN_31  ; out              ;
+; |Counduit2Bus|Control_IN_30  ; |Counduit2Bus|Control_IN_30  ; out              ;
+; |Counduit2Bus|Control_IN_29  ; |Counduit2Bus|Control_IN_29  ; out              ;
+; |Counduit2Bus|Control_IN_28  ; |Counduit2Bus|Control_IN_28  ; out              ;
+; |Counduit2Bus|Control_IN_27  ; |Counduit2Bus|Control_IN_27  ; out              ;
+; |Counduit2Bus|Control_IN_26  ; |Counduit2Bus|Control_IN_26  ; out              ;
+; |Counduit2Bus|Control_IN_25  ; |Counduit2Bus|Control_IN_25  ; out              ;
+; |Counduit2Bus|Control_IN_24  ; |Counduit2Bus|Control_IN_24  ; out              ;
+; |Counduit2Bus|Control_IN_23  ; |Counduit2Bus|Control_IN_23  ; out              ;
+; |Counduit2Bus|Control_IN_22  ; |Counduit2Bus|Control_IN_22  ; out              ;
+; |Counduit2Bus|Control_IN_21  ; |Counduit2Bus|Control_IN_21  ; out              ;
+; |Counduit2Bus|Control_IN_20  ; |Counduit2Bus|Control_IN_20  ; out              ;
+; |Counduit2Bus|Control_IN_19  ; |Counduit2Bus|Control_IN_19  ; out              ;
+; |Counduit2Bus|Control_IN_18  ; |Counduit2Bus|Control_IN_18  ; out              ;
+; |Counduit2Bus|Control_IN_17  ; |Counduit2Bus|Control_IN_17  ; out              ;
+; |Counduit2Bus|Control_IN_16  ; |Counduit2Bus|Control_IN_16  ; out              ;
+; |Counduit2Bus|Control_IN_15  ; |Counduit2Bus|Control_IN_15  ; out              ;
+; |Counduit2Bus|Control_IN_14  ; |Counduit2Bus|Control_IN_14  ; out              ;
+; |Counduit2Bus|Control_IN_13  ; |Counduit2Bus|Control_IN_13  ; out              ;
+; |Counduit2Bus|Control_IN_12  ; |Counduit2Bus|Control_IN_12  ; out              ;
+; |Counduit2Bus|Control_IN_11  ; |Counduit2Bus|Control_IN_11  ; out              ;
+; |Counduit2Bus|Control_IN_10  ; |Counduit2Bus|Control_IN_10  ; out              ;
+; |Counduit2Bus|Control_IN_9   ; |Counduit2Bus|Control_IN_9   ; out              ;
+; |Counduit2Bus|Control_IN_8   ; |Counduit2Bus|Control_IN_8   ; out              ;
++------------------------------+------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                                                                               ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                           ; Output Port Name                                                                              ; Output Port Type ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; |ROM_RAM|inst13[7]                                                                                  ; |ROM_RAM|inst13[7]                                                                            ; out              ;
-; |ROM_RAM|inst13[6]                                                                                  ; |ROM_RAM|inst13[6]                                                                            ; out              ;
-; |ROM_RAM|inst13[5]                                                                                  ; |ROM_RAM|inst13[5]                                                                            ; out              ;
-; |ROM_RAM|inst13[3]                                                                                  ; |ROM_RAM|inst13[3]                                                                            ; out              ;
-; |ROM_RAM|inst10[7]                                                                                  ; |ROM_RAM|inst10[7]                                                                            ; out              ;
-; |ROM_RAM|inst10[6]                                                                                  ; |ROM_RAM|inst10[6]                                                                            ; out              ;
-; |ROM_RAM|inst10[5]                                                                                  ; |ROM_RAM|inst10[5]                                                                            ; out              ;
-; |ROM_RAM|inst10[4]                                                                                  ; |ROM_RAM|inst10[4]                                                                            ; out              ;
-; |ROM_RAM|AddressIN[7]                                                                               ; |ROM_RAM|AddressIN[7]                                                                         ; out              ;
-; |ROM_RAM|AddressIN[6]                                                                               ; |ROM_RAM|AddressIN[6]                                                                         ; out              ;
-; |ROM_RAM|AddressIN[5]                                                                               ; |ROM_RAM|AddressIN[5]                                                                         ; out              ;
-; |ROM_RAM|AddressIN[4]                                                                               ; |ROM_RAM|AddressIN[4]                                                                         ; out              ;
-; |ROM_RAM|ROM/RAM                                                                                    ; |ROM_RAM|ROM/RAM                                                                              ; out              ;
-; |ROM_RAM|inst14                                                                                     ; |ROM_RAM|inst14                                                                               ; out0             ;
-; |ROM_RAM|inst9[7]                                                                                   ; |ROM_RAM|inst9[7]                                                                             ; out              ;
-; |ROM_RAM|inst9[6]                                                                                   ; |ROM_RAM|inst9[6]                                                                             ; out              ;
-; |ROM_RAM|inst9[5]                                                                                   ; |ROM_RAM|inst9[5]                                                                             ; out              ;
-; |ROM_RAM|inst9[4]                                                                                   ; |ROM_RAM|inst9[4]                                                                             ; out              ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a3 ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[3] ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a5 ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[5] ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a6 ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[6] ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a7 ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[7] ; portadataout0    ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
++------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |Counduit2Bus|ControlOUT[7] ; |Counduit2Bus|ControlOUT[7] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[6] ; |Counduit2Bus|ControlOUT[6] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[5] ; |Counduit2Bus|ControlOUT[5] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[4] ; |Counduit2Bus|ControlOUT[4] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[3] ; |Counduit2Bus|ControlOUT[3] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[2] ; |Counduit2Bus|ControlOUT[2] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[1] ; |Counduit2Bus|ControlOUT[1] ; pin_out          ;
+; |Counduit2Bus|ControlOUT[0] ; |Counduit2Bus|ControlOUT[0] ; pin_out          ;
+; |Counduit2Bus|Control_IN_7  ; |Counduit2Bus|Control_IN_7  ; out              ;
+; |Counduit2Bus|Control_IN_6  ; |Counduit2Bus|Control_IN_6  ; out              ;
+; |Counduit2Bus|Control_IN_5  ; |Counduit2Bus|Control_IN_5  ; out              ;
+; |Counduit2Bus|Control_IN_4  ; |Counduit2Bus|Control_IN_4  ; out              ;
+; |Counduit2Bus|Control_IN_3  ; |Counduit2Bus|Control_IN_3  ; out              ;
+; |Counduit2Bus|Control_IN_2  ; |Counduit2Bus|Control_IN_2  ; out              ;
+; |Counduit2Bus|Control_IN_1  ; |Counduit2Bus|Control_IN_1  ; out              ;
+; |Counduit2Bus|Control_IN_0  ; |Counduit2Bus|Control_IN_0  ; out              ;
++-----------------------------+-----------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                                                                               ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                           ; Output Port Name                                                                              ; Output Port Type ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
-; |ROM_RAM|inst13[7]                                                                                  ; |ROM_RAM|inst13[7]                                                                            ; out              ;
-; |ROM_RAM|inst13[6]                                                                                  ; |ROM_RAM|inst13[6]                                                                            ; out              ;
-; |ROM_RAM|inst13[5]                                                                                  ; |ROM_RAM|inst13[5]                                                                            ; out              ;
-; |ROM_RAM|inst13[4]                                                                                  ; |ROM_RAM|inst13[4]                                                                            ; out              ;
-; |ROM_RAM|inst13[3]                                                                                  ; |ROM_RAM|inst13[3]                                                                            ; out              ;
-; |ROM_RAM|inst10[7]                                                                                  ; |ROM_RAM|inst10[7]                                                                            ; out              ;
-; |ROM_RAM|inst10[6]                                                                                  ; |ROM_RAM|inst10[6]                                                                            ; out              ;
-; |ROM_RAM|inst10[5]                                                                                  ; |ROM_RAM|inst10[5]                                                                            ; out              ;
-; |ROM_RAM|inst10[4]                                                                                  ; |ROM_RAM|inst10[4]                                                                            ; out              ;
-; |ROM_RAM|inst10[3]                                                                                  ; |ROM_RAM|inst10[3]                                                                            ; out              ;
-; |ROM_RAM|inst10[2]                                                                                  ; |ROM_RAM|inst10[2]                                                                            ; out              ;
-; |ROM_RAM|inst10[1]                                                                                  ; |ROM_RAM|inst10[1]                                                                            ; out              ;
-; |ROM_RAM|AddressIN[7]                                                                               ; |ROM_RAM|AddressIN[7]                                                                         ; out              ;
-; |ROM_RAM|AddressIN[6]                                                                               ; |ROM_RAM|AddressIN[6]                                                                         ; out              ;
-; |ROM_RAM|AddressIN[5]                                                                               ; |ROM_RAM|AddressIN[5]                                                                         ; out              ;
-; |ROM_RAM|AddressIN[4]                                                                               ; |ROM_RAM|AddressIN[4]                                                                         ; out              ;
-; |ROM_RAM|inst9[7]                                                                                   ; |ROM_RAM|inst9[7]                                                                             ; out              ;
-; |ROM_RAM|inst9[6]                                                                                   ; |ROM_RAM|inst9[6]                                                                             ; out              ;
-; |ROM_RAM|inst9[5]                                                                                   ; |ROM_RAM|inst9[5]                                                                             ; out              ;
-; |ROM_RAM|inst9[4]                                                                                   ; |ROM_RAM|inst9[4]                                                                             ; out              ;
-; |ROM_RAM|inst17                                                                                     ; |ROM_RAM|inst17                                                                               ; out0             ;
-; |ROM_RAM|lpm_ram_io:RAM|datatri[7]~0                                                                ; |ROM_RAM|lpm_ram_io:RAM|datatri[7]~0                                                          ; out0             ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a3 ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[3] ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a5 ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[5] ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a6 ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[6] ; portadataout0    ;
-; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|ram_block1a7 ; |ROM_RAM|lpm_rom6:inst1|altsyncram:altsyncram_component|altsyncram_fr61:auto_generated|q_a[7] ; portadataout0    ;
-+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 +---------------------+
@@ -306,24 +224,20 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Sun May 20 16:41:50 2012
+    Info: Processing started: Sun May 20 18:49:27 2012
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab_3 -c Lab_3
-Info: Using vector source file "C:/Users/Gurio/GIT/SFO_Lab4/lab_4/ROM_RAM.vwf"
+Info: Using vector source file "C:/Users/Gurio/GIT/SFO_Lab4/lab_4/Counduit2Bus.vwf"
 Info: Overwriting simulation input file with simulation results
-    Info: A backup of ROM_RAM.vwf called Lab_3.sim_ori.vwf has been created in the db folder
-Warning: Can't find signal in vector source file for input pin "|ROM_RAM|AddressIN[7]"
-Warning: Can't find signal in vector source file for input pin "|ROM_RAM|AddressIN[6]"
-Warning: Can't find signal in vector source file for input pin "|ROM_RAM|AddressIN[5]"
-Warning: Can't find signal in vector source file for input pin "|ROM_RAM|AddressIN[4]"
+    Info: A backup of Counduit2Bus.vwf called Lab_3.sim_ori.vwf has been created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      77.95 %
-Info: Number of transitions in simulation is 715
-Info: Vector file ROM_RAM.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II Simulator was successful. 0 errors, 4 warnings
+Info: Simulation coverage is      80.00 %
+Info: Number of transitions in simulation is 328
+Info: Vector file Counduit2Bus.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 147 megabytes
-    Info: Processing ended: Sun May 20 16:41:50 2012
+    Info: Processing ended: Sun May 20 18:49:27 2012
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
