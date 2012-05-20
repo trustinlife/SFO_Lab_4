@@ -6,8 +6,8 @@ Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
 Actual Time    : 7.620 ns
-From           : Control_IN_27
-To             : ControlOUT[27]
+From           : Control_IN[12]
+To             : ControlOUT_12
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0

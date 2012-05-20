@@ -4549,7 +4549,7 @@ VECTOR("C:/Users/Gurio/GIT/SFO_Lab4/lab_4/Counduit2Bus.vwf")
 		ZEND = 569176;
 		NUMERATOR = 650;
 		DENOMINATOR = 569176;
-		TOP_INDEX = 0;
+		TOP_INDEX = 56;
 	}
 	CLOCK{
 		PERIOD = 10000;

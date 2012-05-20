@@ -4640,14 +4640,14 @@ clock
 
 # end
 # entity
-Counduit2Bus
+Bus2Control
 # storage
 db|Lab_3.(49).cnf
 db|Lab_3.(49).cnf
 # case_insensitive
 # source_file
-counduit2bus.bdf
-9f67ed6cf63a224dacf88b3fbd107d
+bus2control.bdf
+e6fc74ccbe8a60af4b919febc832951c
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

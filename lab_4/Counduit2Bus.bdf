@@ -677,24 +677,9 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 280 -16)
-	(pt 280 -8)
-	(bus)
-)
-(connector
-	(text "CountrolBUS[39]" (rect 202 -24 284 -12)(font "Arial" ))
-	(pt 192 -8)
-	(pt 280 -8)
-)
-(connector
 	(text "CountrolBUS[38]" (rect 202 0 284 12)(font "Arial" ))
 	(pt 280 16)
 	(pt 192 16)
-)
-(connector
-	(pt 280 -8)
-	(pt 280 16)
-	(bus)
 )
 (connector
 	(text "CountrolBUS[37]" (rect 202 24 284 36)(font "Arial" ))
@@ -1085,6 +1070,21 @@ applicable agreement for further details.
 	(text "CountrolBUS[39..0]" (rect 282 -32 377 -20)(font "Arial" ))
 	(pt 280 -16)
 	(pt 464 -16)
+	(bus)
+)
+(connector
+	(text "CountrolBUS[39]" (rect 202 -24 284 -12)(font "Arial" ))
+	(pt 280 -8)
+	(pt 192 -8)
+)
+(connector
+	(pt 280 -16)
+	(pt 280 -8)
+	(bus)
+)
+(connector
+	(pt 280 -8)
+	(pt 280 16)
 	(bus)
 )
 (junction (pt 280 -8))

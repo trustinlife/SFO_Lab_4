@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for Lab_3
-Sun May 20 18:46:11 2012
+Sun May 20 20:20:31 2012
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -36,12 +36,12 @@ applicable agreement for further details.
 
 +--------------------------------------------------------------------------------------------------------------------------------------------+
 ; Timing Analyzer Summary                                                                                                                    ;
-+------------------------------+-------+---------------+-------------+---------------+----------------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From          ; To             ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+---------------+----------------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 7.620 ns    ; Control_IN_27 ; ControlOUT[27] ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;               ;                ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+---------------+----------------+------------+----------+--------------+
++------------------------------+-------+---------------+-------------+----------------+---------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From           ; To            ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+----------------+---------------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 7.620 ns    ; Control_IN[12] ; ControlOUT_12 ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                ;               ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+----------------+---------------+------------+----------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -91,50 +91,50 @@ Parallel compilation was disabled, but you have multiple processors available. E
 
 +------------------------------------------------------------------------------+
 ; tpd                                                                          ;
-+-------+-------------------+-----------------+---------------+----------------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From          ; To             ;
-+-------+-------------------+-----------------+---------------+----------------+
-; N/A   ; None              ; 7.620 ns        ; Control_IN_27 ; ControlOUT[27] ;
-; N/A   ; None              ; 7.585 ns        ; Control_IN_22 ; ControlOUT[22] ;
-; N/A   ; None              ; 7.496 ns        ; Control_IN_11 ; ControlOUT[11] ;
-; N/A   ; None              ; 7.454 ns        ; Control_IN_0  ; ControlOUT[0]  ;
-; N/A   ; None              ; 7.405 ns        ; Control_IN_31 ; ControlOUT[31] ;
-; N/A   ; None              ; 7.308 ns        ; Control_IN_24 ; ControlOUT[24] ;
-; N/A   ; None              ; 7.291 ns        ; Control_IN_17 ; ControlOUT[17] ;
-; N/A   ; None              ; 7.239 ns        ; Control_IN_25 ; ControlOUT[25] ;
-; N/A   ; None              ; 7.137 ns        ; Control_IN_15 ; ControlOUT[15] ;
-; N/A   ; None              ; 7.110 ns        ; Control_IN_2  ; ControlOUT[2]  ;
-; N/A   ; None              ; 7.105 ns        ; Control_IN_32 ; ControlOUT[32] ;
-; N/A   ; None              ; 7.093 ns        ; Control_IN_28 ; ControlOUT[28] ;
-; N/A   ; None              ; 6.969 ns        ; Control_IN_12 ; ControlOUT[12] ;
-; N/A   ; None              ; 6.965 ns        ; Control_IN_4  ; ControlOUT[4]  ;
-; N/A   ; None              ; 6.943 ns        ; Control_IN_16 ; ControlOUT[16] ;
-; N/A   ; None              ; 6.917 ns        ; Control_IN_6  ; ControlOUT[6]  ;
-; N/A   ; None              ; 6.891 ns        ; Control_IN_21 ; ControlOUT[21] ;
-; N/A   ; None              ; 6.881 ns        ; Control_IN_29 ; ControlOUT[29] ;
-; N/A   ; None              ; 6.879 ns        ; Control_IN_3  ; ControlOUT[3]  ;
-; N/A   ; None              ; 6.870 ns        ; Control_IN_36 ; ControlOUT[36] ;
-; N/A   ; None              ; 6.868 ns        ; Control_IN_26 ; ControlOUT[26] ;
-; N/A   ; None              ; 6.857 ns        ; Control_IN_5  ; ControlOUT[5]  ;
-; N/A   ; None              ; 6.849 ns        ; Control_IN_9  ; ControlOUT[9]  ;
-; N/A   ; None              ; 6.848 ns        ; Control_IN_14 ; ControlOUT[14] ;
-; N/A   ; None              ; 6.685 ns        ; Control_IN_7  ; ControlOUT[7]  ;
-; N/A   ; None              ; 6.683 ns        ; Control_IN_33 ; ControlOUT[33] ;
-; N/A   ; None              ; 6.676 ns        ; Control_IN_35 ; ControlOUT[35] ;
-; N/A   ; None              ; 6.662 ns        ; Control_IN_18 ; ControlOUT[18] ;
-; N/A   ; None              ; 6.655 ns        ; Control_IN_8  ; ControlOUT[8]  ;
-; N/A   ; None              ; 6.648 ns        ; Control_IN_30 ; ControlOUT[30] ;
-; N/A   ; None              ; 6.644 ns        ; Control_IN_37 ; ControlOUT[37] ;
-; N/A   ; None              ; 6.638 ns        ; Control_IN_1  ; ControlOUT[1]  ;
-; N/A   ; None              ; 6.622 ns        ; Control_IN_19 ; ControlOUT[19] ;
-; N/A   ; None              ; 6.608 ns        ; Control_IN_10 ; ControlOUT[10] ;
-; N/A   ; None              ; 6.597 ns        ; Control_IN_34 ; ControlOUT[34] ;
-; N/A   ; None              ; 6.592 ns        ; Control_IN_38 ; ControlOUT[38] ;
-; N/A   ; None              ; 6.589 ns        ; Control_IN_20 ; ControlOUT[20] ;
-; N/A   ; None              ; 6.588 ns        ; Control_IN_23 ; ControlOUT[23] ;
-; N/A   ; None              ; 6.538 ns        ; Control_IN_39 ; ControlOUT[39] ;
-; N/A   ; None              ; 4.424 ns        ; Control_IN_13 ; ControlOUT[13] ;
-+-------+-------------------+-----------------+---------------+----------------+
++-------+-------------------+-----------------+----------------+---------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From           ; To            ;
++-------+-------------------+-----------------+----------------+---------------+
+; N/A   ; None              ; 7.620 ns        ; Control_IN[12] ; ControlOUT_12 ;
+; N/A   ; None              ; 7.585 ns        ; Control_IN[17] ; ControlOUT_17 ;
+; N/A   ; None              ; 7.496 ns        ; Control_IN[28] ; ControlOUT_28 ;
+; N/A   ; None              ; 7.454 ns        ; Control_IN[39] ; ControlOUT_39 ;
+; N/A   ; None              ; 7.405 ns        ; Control_IN[8]  ; ControlOUT_8  ;
+; N/A   ; None              ; 7.308 ns        ; Control_IN[15] ; ControlOUT_15 ;
+; N/A   ; None              ; 7.291 ns        ; Control_IN[22] ; ControlOUT_22 ;
+; N/A   ; None              ; 7.239 ns        ; Control_IN[14] ; ControlOUT_14 ;
+; N/A   ; None              ; 7.137 ns        ; Control_IN[24] ; ControlOUT_24 ;
+; N/A   ; None              ; 7.110 ns        ; Control_IN[37] ; ControlOUT_37 ;
+; N/A   ; None              ; 7.105 ns        ; Control_IN[7]  ; ControlOUT_7  ;
+; N/A   ; None              ; 7.093 ns        ; Control_IN[11] ; ControlOUT_11 ;
+; N/A   ; None              ; 6.969 ns        ; Control_IN[27] ; ControlOUT_27 ;
+; N/A   ; None              ; 6.965 ns        ; Control_IN[35] ; ControlOUT_35 ;
+; N/A   ; None              ; 6.943 ns        ; Control_IN[23] ; ControlOUT_23 ;
+; N/A   ; None              ; 6.917 ns        ; Control_IN[33] ; ControlOUT_33 ;
+; N/A   ; None              ; 6.891 ns        ; Control_IN[18] ; ControlOUT_18 ;
+; N/A   ; None              ; 6.881 ns        ; Control_IN[10] ; ControlOUT_10 ;
+; N/A   ; None              ; 6.879 ns        ; Control_IN[36] ; ControlOUT_36 ;
+; N/A   ; None              ; 6.870 ns        ; Control_IN[3]  ; ControlOUT_3  ;
+; N/A   ; None              ; 6.868 ns        ; Control_IN[13] ; ControlOUT_13 ;
+; N/A   ; None              ; 6.857 ns        ; Control_IN[34] ; ControlOUT_34 ;
+; N/A   ; None              ; 6.849 ns        ; Control_IN[30] ; ControlOUT_30 ;
+; N/A   ; None              ; 6.848 ns        ; Control_IN[25] ; ControlOUT_25 ;
+; N/A   ; None              ; 6.685 ns        ; Control_IN[32] ; ControlOUT_32 ;
+; N/A   ; None              ; 6.683 ns        ; Control_IN[6]  ; ControlOUT_6  ;
+; N/A   ; None              ; 6.676 ns        ; Control_IN[4]  ; ControlOUT_4  ;
+; N/A   ; None              ; 6.662 ns        ; Control_IN[21] ; ControlOUT_21 ;
+; N/A   ; None              ; 6.655 ns        ; Control_IN[31] ; ControlOUT_31 ;
+; N/A   ; None              ; 6.648 ns        ; Control_IN[9]  ; ControlOUT_9  ;
+; N/A   ; None              ; 6.644 ns        ; Control_IN[2]  ; ControlOUT_2  ;
+; N/A   ; None              ; 6.638 ns        ; Control_IN[38] ; ControlOUT_38 ;
+; N/A   ; None              ; 6.622 ns        ; Control_IN[20] ; ControlOUT_20 ;
+; N/A   ; None              ; 6.608 ns        ; Control_IN[29] ; ControlOUT_29 ;
+; N/A   ; None              ; 6.597 ns        ; Control_IN[5]  ; ControlOUT_5  ;
+; N/A   ; None              ; 6.592 ns        ; Control_IN[1]  ; ControlOUT_1  ;
+; N/A   ; None              ; 6.589 ns        ; Control_IN[19] ; ControlOUT_19 ;
+; N/A   ; None              ; 6.588 ns        ; Control_IN[16] ; ControlOUT_16 ;
+; N/A   ; None              ; 6.538 ns        ; Control_IN[0]  ; ControlOUT_0  ;
+; N/A   ; None              ; 4.424 ns        ; Control_IN[26] ; ControlOUT_26 ;
++-------+-------------------+-----------------+----------------+---------------+
 
 
 +--------------------------+
@@ -143,16 +143,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Sun May 20 18:46:11 2012
+    Info: Processing started: Sun May 20 20:20:31 2012
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Lab_3 -c Lab_3 --timing_analysis_only
-Info: Longest tpd from source pin "Control_IN_27" to destination pin "ControlOUT[27]" is 7.620 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.800 ns) = 0.800 ns; Loc. = PIN_H5; Fanout = 1; PIN Node = 'Control_IN_27'
-    Info: 2: + IC(4.666 ns) + CELL(2.154 ns) = 7.620 ns; Loc. = PIN_R1; Fanout = 0; PIN Node = 'ControlOUT[27]'
+Info: Longest tpd from source pin "Control_IN[12]" to destination pin "ControlOUT_12" is 7.620 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.800 ns) = 0.800 ns; Loc. = PIN_H5; Fanout = 1; PIN Node = 'Control_IN[12]'
+    Info: 2: + IC(4.666 ns) + CELL(2.154 ns) = 7.620 ns; Loc. = PIN_R1; Fanout = 0; PIN Node = 'ControlOUT_12'
     Info: Total cell delay = 2.954 ns ( 38.77 % )
     Info: Total interconnect delay = 4.666 ns ( 61.23 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 172 megabytes
-    Info: Processing ended: Sun May 20 18:46:11 2012
+    Info: Processing ended: Sun May 20 20:20:31 2012
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
