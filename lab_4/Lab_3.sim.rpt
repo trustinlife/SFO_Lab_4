@@ -1,5 +1,5 @@
 Simulator report for Lab_3
-Sun May 20 18:49:27 2012
+Sun May 27 23:17:31 2012
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -45,42 +45,42 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 80 nodes     ;
-; Simulation Coverage         ;      80.00 % ;
-; Total Number of Transitions ; 328          ;
+; Simulation Netlist Size     ; 217 nodes    ;
+; Simulation Coverage         ;      94.69 % ;
+; Total Number of Transitions ; 6668         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                            ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
-; Option                                                                                     ; Setting          ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
-; Simulation mode                                                                            ; Functional       ; Timing        ;
-; Start time                                                                                 ; 0 ns             ; 0 ns          ;
-; End time                                                                                   ; 3000 ns          ;               ;
-; Simulation results format                                                                  ; CVWF             ;               ;
-; Vector input source                                                                        ; Counduit2Bus.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On               ; On            ;
-; Check outputs                                                                              ; Off              ; Off           ;
-; Report simulation coverage                                                                 ; On               ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On               ; On            ;
-; Display missing 1-value coverage report                                                    ; On               ; On            ;
-; Display missing 0-value coverage report                                                    ; On               ; On            ;
-; Detect setup and hold time violations                                                      ; Off              ; Off           ;
-; Detect glitches                                                                            ; Off              ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off              ; Off           ;
-; Generate Signal Activity File                                                              ; Off              ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off              ; Off           ;
-; Group bus channels in simulation results                                                   ; Off              ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On               ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE       ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off              ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On               ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto             ; Auto          ;
-+--------------------------------------------------------------------------------------------+------------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Option                                                                                     ; Setting           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Simulation mode                                                                            ; Functional        ; Timing        ;
+; Start time                                                                                 ; 0 ns              ; 0 ns          ;
+; End time                                                                                   ; 3000 ns           ;               ;
+; Simulation results format                                                                  ; CVWF              ;               ;
+; Vector input source                                                                        ; Com+Inst_test.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
+; Check outputs                                                                              ; Off               ; Off           ;
+; Report simulation coverage                                                                 ; On                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                ; On            ;
+; Detect setup and hold time violations                                                      ; Off               ; Off           ;
+; Detect glitches                                                                            ; Off               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
+; Generate Signal Activity File                                                              ; Off               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
 
 
 +----------------------+
@@ -95,120 +95,274 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      80.00 % ;
-; Total nodes checked                                 ; 80           ;
-; Total output ports checked                          ; 80           ;
-; Total output ports with complete 1/0-value coverage ; 64           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 16           ;
-; Total output ports with no 0-value coverage         ; 0            ;
+; Total coverage as a percentage                      ;      94.69 % ;
+; Total nodes checked                                 ; 217          ;
+; Total output ports checked                          ; 226          ;
+; Total output ports with complete 1/0-value coverage ; 214          ;
+; Total output ports with no 1/0-value coverage       ; 7            ;
+; Total output ports with no 1-value coverage         ; 12           ;
+; Total output ports with no 0-value coverage         ; 7            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                    ;
-+------------------------------+------------------------------+------------------+
-; Node Name                    ; Output Port Name             ; Output Port Type ;
-+------------------------------+------------------------------+------------------+
-; |Counduit2Bus|ControlOUT[39] ; |Counduit2Bus|ControlOUT[39] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[38] ; |Counduit2Bus|ControlOUT[38] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[37] ; |Counduit2Bus|ControlOUT[37] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[36] ; |Counduit2Bus|ControlOUT[36] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[35] ; |Counduit2Bus|ControlOUT[35] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[34] ; |Counduit2Bus|ControlOUT[34] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[33] ; |Counduit2Bus|ControlOUT[33] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[32] ; |Counduit2Bus|ControlOUT[32] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[31] ; |Counduit2Bus|ControlOUT[31] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[30] ; |Counduit2Bus|ControlOUT[30] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[29] ; |Counduit2Bus|ControlOUT[29] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[28] ; |Counduit2Bus|ControlOUT[28] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[27] ; |Counduit2Bus|ControlOUT[27] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[26] ; |Counduit2Bus|ControlOUT[26] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[25] ; |Counduit2Bus|ControlOUT[25] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[24] ; |Counduit2Bus|ControlOUT[24] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[23] ; |Counduit2Bus|ControlOUT[23] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[22] ; |Counduit2Bus|ControlOUT[22] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[21] ; |Counduit2Bus|ControlOUT[21] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[20] ; |Counduit2Bus|ControlOUT[20] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[19] ; |Counduit2Bus|ControlOUT[19] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[18] ; |Counduit2Bus|ControlOUT[18] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[17] ; |Counduit2Bus|ControlOUT[17] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[16] ; |Counduit2Bus|ControlOUT[16] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[15] ; |Counduit2Bus|ControlOUT[15] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[14] ; |Counduit2Bus|ControlOUT[14] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[13] ; |Counduit2Bus|ControlOUT[13] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[12] ; |Counduit2Bus|ControlOUT[12] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[11] ; |Counduit2Bus|ControlOUT[11] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[10] ; |Counduit2Bus|ControlOUT[10] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[9]  ; |Counduit2Bus|ControlOUT[9]  ; pin_out          ;
-; |Counduit2Bus|ControlOUT[8]  ; |Counduit2Bus|ControlOUT[8]  ; pin_out          ;
-; |Counduit2Bus|Control_IN_39  ; |Counduit2Bus|Control_IN_39  ; out              ;
-; |Counduit2Bus|Control_IN_38  ; |Counduit2Bus|Control_IN_38  ; out              ;
-; |Counduit2Bus|Control_IN_37  ; |Counduit2Bus|Control_IN_37  ; out              ;
-; |Counduit2Bus|Control_IN_36  ; |Counduit2Bus|Control_IN_36  ; out              ;
-; |Counduit2Bus|Control_IN_35  ; |Counduit2Bus|Control_IN_35  ; out              ;
-; |Counduit2Bus|Control_IN_34  ; |Counduit2Bus|Control_IN_34  ; out              ;
-; |Counduit2Bus|Control_IN_33  ; |Counduit2Bus|Control_IN_33  ; out              ;
-; |Counduit2Bus|Control_IN_32  ; |Counduit2Bus|Control_IN_32  ; out              ;
-; |Counduit2Bus|Control_IN_31  ; |Counduit2Bus|Control_IN_31  ; out              ;
-; |Counduit2Bus|Control_IN_30  ; |Counduit2Bus|Control_IN_30  ; out              ;
-; |Counduit2Bus|Control_IN_29  ; |Counduit2Bus|Control_IN_29  ; out              ;
-; |Counduit2Bus|Control_IN_28  ; |Counduit2Bus|Control_IN_28  ; out              ;
-; |Counduit2Bus|Control_IN_27  ; |Counduit2Bus|Control_IN_27  ; out              ;
-; |Counduit2Bus|Control_IN_26  ; |Counduit2Bus|Control_IN_26  ; out              ;
-; |Counduit2Bus|Control_IN_25  ; |Counduit2Bus|Control_IN_25  ; out              ;
-; |Counduit2Bus|Control_IN_24  ; |Counduit2Bus|Control_IN_24  ; out              ;
-; |Counduit2Bus|Control_IN_23  ; |Counduit2Bus|Control_IN_23  ; out              ;
-; |Counduit2Bus|Control_IN_22  ; |Counduit2Bus|Control_IN_22  ; out              ;
-; |Counduit2Bus|Control_IN_21  ; |Counduit2Bus|Control_IN_21  ; out              ;
-; |Counduit2Bus|Control_IN_20  ; |Counduit2Bus|Control_IN_20  ; out              ;
-; |Counduit2Bus|Control_IN_19  ; |Counduit2Bus|Control_IN_19  ; out              ;
-; |Counduit2Bus|Control_IN_18  ; |Counduit2Bus|Control_IN_18  ; out              ;
-; |Counduit2Bus|Control_IN_17  ; |Counduit2Bus|Control_IN_17  ; out              ;
-; |Counduit2Bus|Control_IN_16  ; |Counduit2Bus|Control_IN_16  ; out              ;
-; |Counduit2Bus|Control_IN_15  ; |Counduit2Bus|Control_IN_15  ; out              ;
-; |Counduit2Bus|Control_IN_14  ; |Counduit2Bus|Control_IN_14  ; out              ;
-; |Counduit2Bus|Control_IN_13  ; |Counduit2Bus|Control_IN_13  ; out              ;
-; |Counduit2Bus|Control_IN_12  ; |Counduit2Bus|Control_IN_12  ; out              ;
-; |Counduit2Bus|Control_IN_11  ; |Counduit2Bus|Control_IN_11  ; out              ;
-; |Counduit2Bus|Control_IN_10  ; |Counduit2Bus|Control_IN_10  ; out              ;
-; |Counduit2Bus|Control_IN_9   ; |Counduit2Bus|Control_IN_9   ; out              ;
-; |Counduit2Bus|Control_IN_8   ; |Counduit2Bus|Control_IN_8   ; out              ;
-+------------------------------+------------------------------+------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                                     ;
++-------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                           ; Output Port Name                                                                                                                       ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |lab4|Read_DR                                                                                                                       ; |lab4|Read_DR                                                                                                                          ; pin_out          ;
+; |lab4|inst11                                                                                                                        ; |lab4|inst11                                                                                                                           ; out0             ;
+; |lab4|inst60                                                                                                                        ; |lab4|inst60                                                                                                                           ; out0             ;
+; |lab4|inst59                                                                                                                        ; |lab4|inst59                                                                                                                           ; out0             ;
+; |lab4|CLK                                                                                                                           ; |lab4|CLK                                                                                                                              ; out              ;
+; |lab4|Comand[1]                                                                                                                     ; |lab4|Comand[1]                                                                                                                        ; out              ;
+; |lab4|Comand[0]                                                                                                                     ; |lab4|Comand[0]                                                                                                                        ; out              ;
+; |lab4|Write_DR                                                                                                                      ; |lab4|Write_DR                                                                                                                         ; pin_out          ;
+; |lab4|inst13                                                                                                                        ; |lab4|inst13                                                                                                                           ; out0             ;
+; |lab4|Write_AR                                                                                                                      ; |lab4|Write_AR                                                                                                                         ; pin_out          ;
+; |lab4|inst12                                                                                                                        ; |lab4|inst12                                                                                                                           ; out0             ;
+; |lab4|Read_IR0                                                                                                                      ; |lab4|Read_IR0                                                                                                                         ; pin_out          ;
+; |lab4|Write_IR0                                                                                                                     ; |lab4|Write_IR0                                                                                                                        ; pin_out          ;
+; |lab4|Read_IR1                                                                                                                      ; |lab4|Read_IR1                                                                                                                         ; pin_out          ;
+; |lab4|Write_IR1                                                                                                                     ; |lab4|Write_IR1                                                                                                                        ; pin_out          ;
+; |lab4|Read_IR2                                                                                                                      ; |lab4|Read_IR2                                                                                                                         ; pin_out          ;
+; |lab4|Write_IR2                                                                                                                     ; |lab4|Write_IR2                                                                                                                        ; pin_out          ;
+; |lab4|Input_DB                                                                                                                      ; |lab4|Input_DB                                                                                                                         ; pin_out          ;
+; |lab4|inst17                                                                                                                        ; |lab4|inst17                                                                                                                           ; out0             ;
+; |lab4|Output_DB                                                                                                                     ; |lab4|Output_DB                                                                                                                        ; pin_out          ;
+; |lab4|Output_AB                                                                                                                     ; |lab4|Output_AB                                                                                                                        ; pin_out          ;
+; |lab4|inst14                                                                                                                        ; |lab4|inst14                                                                                                                           ; out0             ;
+; |lab4|Read_AR                                                                                                                       ; |lab4|Read_AR                                                                                                                          ; pin_out          ;
+; |lab4|inst10                                                                                                                        ; |lab4|inst10                                                                                                                           ; out0             ;
+; |lab4|Output_CB                                                                                                                     ; |lab4|Output_CB                                                                                                                        ; pin_out          ;
+; |lab4|MemoryAccess                                                                                                                  ; |lab4|MemoryAccess                                                                                                                     ; pin_out          ;
+; |lab4|inst6                                                                                                                         ; |lab4|inst6                                                                                                                            ; out0             ;
+; |lab4|RegistersAccess                                                                                                               ; |lab4|RegistersAccess                                                                                                                  ; pin_out          ;
+; |lab4|Read                                                                                                                          ; |lab4|Read                                                                                                                             ; pin_out          ;
+; |lab4|inst2                                                                                                                         ; |lab4|inst2                                                                                                                            ; out0             ;
+; |lab4|Write                                                                                                                         ; |lab4|Write                                                                                                                            ; pin_out          ;
+; |lab4|ROM                                                                                                                           ; |lab4|ROM                                                                                                                              ; pin_out          ;
+; |lab4|RAM                                                                                                                           ; |lab4|RAM                                                                                                                              ; pin_out          ;
+; |lab4|Load_IP                                                                                                                       ; |lab4|Load_IP                                                                                                                          ; pin_out          ;
+; |lab4|PickCommand                                                                                                                   ; |lab4|PickCommand                                                                                                                      ; pin_out          ;
+; |lab4|IncIP                                                                                                                         ; |lab4|IncIP                                                                                                                            ; pin_out          ;
+; |lab4|ComEx                                                                                                                         ; |lab4|ComEx                                                                                                                            ; pin_out          ;
+; |lab4|AllowCouunt                                                                                                                   ; |lab4|AllowCouunt                                                                                                                      ; pin_out          ;
+; |lab4|InstructionCounter:inst30|inst73                                                                                              ; |lab4|InstructionCounter:inst30|inst73                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst56                                                                                              ; |lab4|InstructionCounter:inst30|inst56                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst61                                                                                              ; |lab4|InstructionCounter:inst30|inst61                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst70                                                                                              ; |lab4|InstructionCounter:inst30|inst70                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst60                                                                                              ; |lab4|InstructionCounter:inst30|inst60                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst                                                                                                ; |lab4|InstructionCounter:inst30|inst                                                                                                   ; out0             ;
+; |lab4|InstructionCounter:inst30|inst23                                                                                              ; |lab4|InstructionCounter:inst30|inst23                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst69                                                                                              ; |lab4|InstructionCounter:inst30|inst69                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst57                                                                                              ; |lab4|InstructionCounter:inst30|inst57                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst68                                                                                              ; |lab4|InstructionCounter:inst30|inst68                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst58                                                                                              ; |lab4|InstructionCounter:inst30|inst58                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst62                                                                                              ; |lab4|InstructionCounter:inst30|inst62                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst67                                                                                              ; |lab4|InstructionCounter:inst30|inst67                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst66                                                                                              ; |lab4|InstructionCounter:inst30|inst66                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst65                                                                                              ; |lab4|InstructionCounter:inst30|inst65                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst64                                                                                              ; |lab4|InstructionCounter:inst30|inst64                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst63                                                                                              ; |lab4|InstructionCounter:inst30|inst63                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst74                                                                                              ; |lab4|InstructionCounter:inst30|inst74                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst71                                                                                              ; |lab4|InstructionCounter:inst30|inst71                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst72                                                                                              ; |lab4|InstructionCounter:inst30|inst72                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst76                                                                                              ; |lab4|InstructionCounter:inst30|inst76                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst55                                                                                              ; |lab4|InstructionCounter:inst30|inst55                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst75                                                                                              ; |lab4|InstructionCounter:inst30|inst75                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|inst59                                                                                              ; |lab4|InstructionCounter:inst30|inst59                                                                                                 ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0   ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0      ; sumout           ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0   ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1   ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1      ; sumout           ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1   ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2   ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2      ; sumout           ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2   ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3   ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_comb_bita3      ; sumout           ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[3] ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[3]               ; regout           ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[2] ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[2]               ; regout           ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[1] ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[1]               ; regout           ;
+; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|counter_reg_bit1a[0] ; |lab4|InstructionCounter:inst30|lpm_counter6:Devider|lpm_counter:lpm_counter_component|cntr_e4i:auto_generated|safe_q[0]               ; regout           ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[2]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[2]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[1]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[1]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[3]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[3]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[2]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[2]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[1]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[1]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[3]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[3]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[2]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[2]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[1]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode122w[1]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[3]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[3]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[2]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[2]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[1]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode132w[1]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[3]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[3]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[2]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[2]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[1]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode142w[1]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[3]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[3]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[2]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[2]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[1]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode152w[1]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[3]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[2]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[2]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[1]         ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode162w[1]            ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[2]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[2]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[1]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[1]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[2]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[2]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[1]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[1]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[2]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[2]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[1]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[1]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[3]           ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[3]              ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[2]           ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[2]              ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[1]           ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode4w[1]              ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[2]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[2]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[1]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[1]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[2]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[2]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[1]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[1]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[2]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[2]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[1]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[1]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[2]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[2]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[1]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[1]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[2]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[2]             ; out0             ;
+; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[1]          ; |lab4|InstructionCounter:inst30|lpm_decode3:inst24|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[1]             ; out0             ;
+; |lab4|CommandControl:inst|inst24                                                                                                    ; |lab4|CommandControl:inst|inst24                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst65                                                                                                    ; |lab4|CommandControl:inst|inst65                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst64                                                                                                    ; |lab4|CommandControl:inst|inst64                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst34                                                                                                    ; |lab4|CommandControl:inst|inst34                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst35                                                                                                    ; |lab4|CommandControl:inst|inst35                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst59                                                                                                    ; |lab4|CommandControl:inst|inst59                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst12[1]                                                                                                 ; |lab4|CommandControl:inst|inst12[1]                                                                                                    ; out              ;
+; |lab4|CommandControl:inst|inst12[0]                                                                                                 ; |lab4|CommandControl:inst|inst12[0]                                                                                                    ; out              ;
+; |lab4|CommandControl:inst|inst23                                                                                                    ; |lab4|CommandControl:inst|inst23                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst32                                                                                                    ; |lab4|CommandControl:inst|inst32                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst25                                                                                                    ; |lab4|CommandControl:inst|inst25                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|inst15                                                                                                    ; |lab4|CommandControl:inst|inst15                                                                                                       ; out0             ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[1]                                                           ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[1]                                                              ; regout           ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[0]                                                           ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[0]                                                              ; regout           ;
+; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]                  ; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]                     ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[2]                  ; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[2]                     ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[1]                  ; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[1]                     ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]                  ; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]                     ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[2]                  ; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[2]                     ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[1]                  ; |lab4|CommandControl:inst|lpm_decode4:inst|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[1]                     ; out0             ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|_~9                    ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|_~9                       ; out0             ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita0     ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita0        ; sumout           ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita0     ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita0~COUT   ; cout             ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita1     ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita1        ; sumout           ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita1     ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita1~COUT   ; cout             ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita2     ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita2        ; sumout           ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita2     ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita2~COUT   ; cout             ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita3     ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita3        ; sumout           ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[2]   ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[2]                 ; regout           ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[1]   ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[1]                 ; regout           ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[0]   ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[0]                 ; regout           ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst6|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|_~9                    ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|_~9                       ; out0             ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita0     ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita0        ; sumout           ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita0     ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita0~COUT   ; cout             ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita1     ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita1        ; sumout           ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita1     ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita1~COUT   ; cout             ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita2     ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita2        ; sumout           ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita2     ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita2~COUT   ; cout             ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita3     ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_comb_bita3        ; sumout           ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[3]   ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[3]                 ; regout           ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[2]   ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[2]                 ; regout           ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[1]   ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[1]                 ; regout           ;
+; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[0]   ; |lab4|CommandControl:inst|lpm_counter8:MoveCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[0]                 ; regout           ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]                ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[3]                   ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[2]                ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[2]                   ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[1]                ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode102w[1]                   ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[3]                ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[3]                   ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[2]                ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[2]                   ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[1]                ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode112w[1]                   ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode21w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode31w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode41w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode51w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode61w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode71w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode81w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[3]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[2]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[2]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[1]                 ; |lab4|CommandControl:inst|lpm_decode4:inst4|lpm_decode:lpm_decode_component|decode_e9f:auto_generated|w_anode91w[1]                    ; out0             ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[1]~2                                                         ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[1]~2                                                            ; out0             ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[0]~3                                                         ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[0]~3                                                            ; out0             ;
++-------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                     ;
-+-----------------------------+-----------------------------+------------------+
-; Node Name                   ; Output Port Name            ; Output Port Type ;
-+-----------------------------+-----------------------------+------------------+
-; |Counduit2Bus|ControlOUT[7] ; |Counduit2Bus|ControlOUT[7] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[6] ; |Counduit2Bus|ControlOUT[6] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[5] ; |Counduit2Bus|ControlOUT[5] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[4] ; |Counduit2Bus|ControlOUT[4] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[3] ; |Counduit2Bus|ControlOUT[3] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[2] ; |Counduit2Bus|ControlOUT[2] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[1] ; |Counduit2Bus|ControlOUT[1] ; pin_out          ;
-; |Counduit2Bus|ControlOUT[0] ; |Counduit2Bus|ControlOUT[0] ; pin_out          ;
-; |Counduit2Bus|Control_IN_7  ; |Counduit2Bus|Control_IN_7  ; out              ;
-; |Counduit2Bus|Control_IN_6  ; |Counduit2Bus|Control_IN_6  ; out              ;
-; |Counduit2Bus|Control_IN_5  ; |Counduit2Bus|Control_IN_5  ; out              ;
-; |Counduit2Bus|Control_IN_4  ; |Counduit2Bus|Control_IN_4  ; out              ;
-; |Counduit2Bus|Control_IN_3  ; |Counduit2Bus|Control_IN_3  ; out              ;
-; |Counduit2Bus|Control_IN_2  ; |Counduit2Bus|Control_IN_2  ; out              ;
-; |Counduit2Bus|Control_IN_1  ; |Counduit2Bus|Control_IN_1  ; out              ;
-; |Counduit2Bus|Control_IN_0  ; |Counduit2Bus|Control_IN_0  ; out              ;
-+-----------------------------+-----------------------------+------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                                                      ;
++-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                         ; Output Port Name                                                                                                       ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
+; |lab4|Clear                                                                                                                       ; |lab4|Clear                                                                                                            ; out              ;
+; |lab4|Comand[3]                                                                                                                   ; |lab4|Comand[3]                                                                                                        ; out              ;
+; |lab4|Comand[2]                                                                                                                   ; |lab4|Comand[2]                                                                                                        ; out              ;
+; |lab4|Input_CB                                                                                                                    ; |lab4|Input_CB                                                                                                         ; pin_out          ;
+; |lab4|Input_AB                                                                                                                    ; |lab4|Input_AB                                                                                                         ; pin_out          ;
+; |lab4|CommandControl:inst|inst12[3]                                                                                               ; |lab4|CommandControl:inst|inst12[3]                                                                                    ; out              ;
+; |lab4|CommandControl:inst|inst12[2]                                                                                               ; |lab4|CommandControl:inst|inst12[2]                                                                                    ; out              ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[3]                                                         ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[3]                                              ; regout           ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[2]                                                         ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[2]                                              ; regout           ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[3] ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[3] ; regout           ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[3]~0                                                       ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[3]~0                                            ; out0             ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[2]~1                                                       ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[2]~1                                            ; out0             ;
++-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+-------------------------------------------------+
-; Missing 0-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                                      ;
++-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                         ; Output Port Name                                                                                                       ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
+; |lab4|Comand[3]                                                                                                                   ; |lab4|Comand[3]                                                                                                        ; out              ;
+; |lab4|Comand[2]                                                                                                                   ; |lab4|Comand[2]                                                                                                        ; out              ;
+; |lab4|Input_CB                                                                                                                    ; |lab4|Input_CB                                                                                                         ; pin_out          ;
+; |lab4|Input_AB                                                                                                                    ; |lab4|Input_AB                                                                                                         ; pin_out          ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[3]                                                         ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[3]                                              ; regout           ;
+; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[2]                                                         ; |lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[2]                                              ; regout           ;
+; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|counter_reg_bit1a[3] ; |lab4|CommandControl:inst|lpm_counter8:JumpCounter|lpm_counter:lpm_counter_component|cntr_5pi:auto_generated|safe_q[3] ; regout           ;
++-----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -224,21 +378,25 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Sun May 20 18:49:27 2012
+    Info: Processing started: Sun May 27 23:17:30 2012
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab_3 -c Lab_3
-Info: Using vector source file "C:/Users/Gurio/GIT/SFO_Lab4/lab_4/Counduit2Bus.vwf"
+Info: Using vector source file "C:/Users/Gurio/GIT/SFO_Lab4/lab_4/Com+Inst_test.vwf"
 Info: Overwriting simulation input file with simulation results
-    Info: A backup of Counduit2Bus.vwf called Lab_3.sim_ori.vwf has been created in the db folder
+    Info: A backup of Com+Inst_test.vwf called Lab_3.sim_ori.vwf has been created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 145.0 ns on register "|lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[3]"
+Warning: Found clock-sensitive change during active clock edge at time 145.0 ns on register "|lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[2]"
+Warning: Found clock-sensitive change during active clock edge at time 145.0 ns on register "|lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[1]"
+Warning: Found clock-sensitive change during active clock edge at time 145.0 ns on register "|lab4|CommandControl:inst|lpm_ff14:inst30|lpm_ff:lpm_ff_component|dffs[0]"
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      80.00 %
-Info: Number of transitions in simulation is 328
-Info: Vector file Counduit2Bus.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 147 megabytes
-    Info: Processing ended: Sun May 20 18:49:27 2012
-    Info: Elapsed time: 00:00:00
+Info: Simulation coverage is      94.69 %
+Info: Number of transitions in simulation is 6668
+Info: Vector file Com+Inst_test.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 150 megabytes
+    Info: Processing ended: Sun May 27 23:17:31 2012
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

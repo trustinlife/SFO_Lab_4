@@ -54,22 +54,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -296 616 -128 632)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "Load/Read" (rect 5 0 58 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12)(line_width 1))
-		(line (pt 92 4)(pt 117 4)(line_width 1))
-		(line (pt 121 8)(pt 168 8)(line_width 1))
-		(line (pt 92 12)(pt 92 4)(line_width 1))
-		(line (pt 117 4)(pt 121 8)(line_width 1))
-		(line (pt 117 12)(pt 121 8)(line_width 1))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect -280 416 -112 432)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "WrE/ReE" (rect 5 0 51 12)(font "Arial" ))
@@ -3938,10 +3922,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -128 624)
-	(pt -16 624)
-)
-(connector
 	(pt 584 560)
 	(pt 624 560)
 )
@@ -4937,30 +4917,26 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -88 424)
-	(pt -88 448)
-)
-(connector
 	(pt -40 448)
 	(pt -88 448)
 )
 (connector
-	(text "RegNum[3]" (rect -150 288 -94 300)(font "Arial" ))
+	(text "RegNum[3]" (rect -86 288 -30 300)(font "Arial" ))
 	(pt -104 304)
 	(pt 232 304)
 )
 (connector
-	(text "RegNum[2]" (rect -150 312 -94 324)(font "Arial" ))
+	(text "RegNum[2]" (rect -86 312 -30 324)(font "Arial" ))
 	(pt -104 328)
 	(pt 232 328)
 )
 (connector
-	(text "RegNum[1]" (rect -150 336 -94 348)(font "Arial" ))
+	(text "RegNum[1]" (rect -86 336 -30 348)(font "Arial" ))
 	(pt -104 352)
 	(pt 232 352)
 )
 (connector
-	(text "RegNum[0]" (rect -150 360 -94 372)(font "Arial" ))
+	(text "RegNum[0]" (rect -86 360 -30 372)(font "Arial" ))
 	(pt -104 376)
 	(pt 232 376)
 )
@@ -6051,6 +6027,18 @@ applicable agreement for further details.
 	(pt 232 304)
 	(bus)
 )
+(connector
+	(pt -88 624)
+	(pt -16 624)
+)
+(connector
+	(pt -88 424)
+	(pt -88 448)
+)
+(connector
+	(pt -88 448)
+	(pt -88 624)
+)
 (junction (pt 176 592))
 (junction (pt 176 824))
 (junction (pt -16 624))
@@ -6167,3 +6155,4 @@ applicable agreement for further details.
 (junction (pt 680 2776))
 (junction (pt 816 2848))
 (junction (pt 816 608))
+(junction (pt -88 448))
