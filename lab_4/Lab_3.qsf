@@ -103,7 +103,12 @@ set_global_assignment -name QIP_FILE lpm_ff13.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE CommandControl.vwf
 set_global_assignment -name QIP_FILE lpm_ff14.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE Com+Inst_test.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Com+Inst_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Control.vwf
+set_global_assignment -name QIP_FILE lpm_counter9.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE Lab4.vwf
+set_global_assignment -name QIP_FILE lpm_decode5.qip
+set_global_assignment -name QIP_FILE lpm_counter10.qip
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Lab4.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
